@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+    <title>Rêve Discos</title>
+    <link rel="stylesheet" type="text/css" href="/Reve/CSS/menu_style.css">
+    <link rel="stylesheet" type="text/css" href="/Reve/CSS/contact_style.css">
+    <!-- In the body, we create a div to contain the menu. -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="home.html" id="navbar__logo">
+                <img src="\REVE\images\Logo REVEDISCOS.png" alt="RÊVE Logo">
+                <span>Rêve Discos</span>
+            </a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    
+                    <a href="about.html" class="navbar__links"> About </a>
+                </li>
+                <li class="navbar__item dropdown">
+                    <a class="navbar__links">Artists</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="chrisanich.html">Chris Anich</a></li>
+                        <li><a href="desombras.html">De Sombras y Siluetas</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="store.html" class="navbar__links"> Store </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links"> Contact </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Create a welcome page introducing the Rêve Discos (Independent Chilean Record Label) -->
+    <!-- Enter your email -->
+
+    <div class="email-form">
+        <h1>Contact</h1>
+        <h2>Enter your email:</h2>
+        <input type="email" id="emailaddress" value="">
+        <button type="button" onclick="email()">Submit</button>
+        <p>Your email is: <label id="user_email"></label></p>
+    </div>
+<!------------------------------------------------------------------------------->
+<script src="/REVE/reve.js"></script>
+
+<!-- Footer -->
+<footer>    
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="copyright">© Rêve Discos 2024</div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="policy.html" class="navbar__links"> Policy </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </footer>
+</body>
+</html>
