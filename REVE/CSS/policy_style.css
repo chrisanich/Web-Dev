@@ -1,7 +1,7 @@
 .policy, .about {
     display: grid;
     gap: 10px;
-    margin: 40px 650px auto; /* top margin is 20px, right and left margins are auto, bottom margin is 0 */
+    margin: 40px 400px auto; /* top margin is 20px, right and left margins are auto, bottom margin is 0 */
     justify-content: center; /* centers content horizontally */
     align-items: center; /* centers content vertically */
   }
