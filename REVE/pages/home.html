@@ -1,22 +1,56 @@
+<!--We first create an html declaration for the browser to understand that
+we are writting the website in HTML-->
 <!DOCTYPE html>
+<!--We need an html tag that contains the elements of the page and add
+the land attribute to specify that the used language is English-->
 <html lang="en">
+<!--We create the head tag to contain the metadata of the site, in this case,
+only the title to be displayed on the tab-->
 <head>
-<body>
     <title>Rêve Discos</title>
+</head>
+<!--The body tag is to contain all the content of the website. In this case, the navigation bar 
+(menu bar) and footer are included among all the information to be displayed to the user-->
+<body>
+    <!--In the beginning of the body we create a link tag to reference the CSS files that will
+    define the design the style of every element inside the body. In this particular case,
+    one for the menu (that will be used in every page and a particular one for the home page)-->
     <link rel="stylesheet" type="text/css" href="/CSS/menu_style.css">
     <link rel="stylesheet" type="text/css" href="/CSS/home_style.css">
-    <!-- In the body, we create a div to contain the menu. -->
+    <!--This nav element is created to encompass every single element included in the navbar that,
+    links to other pages. This is, every element of the navigation bar-->
     <nav class="navbar">
+        <!--We create a div (division) element that will host all elements of the navigation bar.
+        This is necessary to have a class (navbar__container) that will allow us to reference it
+        in the CCS file (menu_style). It will be applied to every single page ob the website to
+        give it coherence-->
         <div class="navbar__container">
+            <!--Inside this divition, we have an 'a' tag that uses the 'href' attribute to contain
+            the link, in this case, the home page. In this way, we can go back to the main page from
+            any other page of the website-->
             <a href="home.html" id="navbar__logo">
+                <!--The home page is reached by pressing the logo and 'Rêve Discos' word.
+                This is the reason why there is an image hosted insde the navbar__container
+                and the name of the company beside it-->
                 <img src="\images\Logo REVEDISCOS.png" alt="RÊVE Logo">
                 <span>Rêve Discos</span>
             </a>
+            <!--Inside the div element there is an 'ul' element (list of items) with the class name
+            'navbar__menu', where the links to the different pages are-->
             <ul class="navbar__menu">
+                <!--Every 'li' element inside this 'ul' is a listed item that represent every page
+                besides the home page. All of them contain an 'href' element which heads to the
+                respective link (html file) and have the displayed name. The first one is the 'About'
+                page-->
                 <li class="navbar__item">
-                    
                     <a href="about.html" class="navbar__links"> About </a>
                 </li>
+                <!--This is a special 'li' element, because inside it there are 2 child elements.
+                The 'navbar__item dropdown' element contain the 'a' element of class 'navbar__links',
+                which keeps and 'ul' element of class 'navbar__link', and which name is Artist.
+                Inside this last element there are 2 'li' elements with their respective 'href' element 
+                or link, one for each artist (2 of them). This was created in this way to dropdown both 
+                elements by using a Javascript function (Dropdown menu)-->
                 <li class="navbar__item dropdown">
                     <a class="navbar__links">Artists</a>
                     <ul class="dropdown-menu">
