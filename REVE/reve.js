@@ -21,17 +21,24 @@ document.querySelector('.dropdown').addEventListener('mouseout', function() {
 
 /*Music Player*/ 
 
-
 let songs = [
     {src: "/songs/Chris Anich - Dime si no.mp3", title: "Dime si no", artist: "Chris Anich"},
     {src: "/songs/Chris Anich - Bienvenidos a la Tierra.mp3", title: "Bienvenidos a la Tierrra", artist: "Chris Anich"},
-    {src: "/songs/DSYS - Escalava de nadie.mp3", title: "Esclava de nadie", artist: "De Sombras y Siluetas"},
-    {src: "/songs/DSYS - Ladrandole a la luna.mp3", title: "Bienvenidos a la Tierrra", artist: "De Sombras y Siluetas"},
+    {src: "/songs/DSYS - Esclava de nadie.mp3", title: "Esclava de nadie", artist: "De Sombras y Siluetas"},
+    {src: "/songs/DSYS - Ladrandole a la luna.mp3", title: "Landrándole a la luna", artist: "De Sombras y Siluetas"},
 ];
 
 let currentSong = 0;
 let audio = new Audio(songs[currentSong].src);
 let isPlaying = false;
+
+function updateSongInfo() {
+    let songTitleElement = document.querySelector('.song_title p:nth-child(1)');
+    let artistNameElement = document.querySelector('.song_title p:nth-child(2)');
+
+    songTitleElement.textContent = songs[currentSong].title;
+    artistNameElement.textContent = songs[currentSong].artist;
+}
 
 function playPauseSong() {
     if (isPlaying) {
@@ -40,6 +47,7 @@ function playPauseSong() {
         audio.play();
     }
     isPlaying = !isPlaying;
+    updateSongInfo();
 }
 
 function nextSong() {
@@ -51,6 +59,7 @@ function nextSong() {
     audio.src = songs[currentSong].src;
     audio.load();
     audio.play();
+    updateSongInfo();
 }
 
 function prevSong() {
@@ -62,7 +71,16 @@ function prevSong() {
     audio.src = songs[currentSong].src;
     audio.load();
     audio.play();
+    updateSongInfo();
 }
+
+function adjustVolume(value) {
+    audio.volume = value;
+    document.getElementById('volumeValue').innerText = Math.round(value * 100) + '%';
+}
+
+// Initialize volume
+adjustVolume(document.getElementById('volumeSlider').value);
 
 let playButton = document.getElementById('play_btn');
 if (playButton) {
@@ -107,4 +125,8 @@ function playSong(index) {
         audio.play();
         isPlaying = true;
     }
+    updateSongInfo();
 }
+
+// Update the song info when the page loads
+updateSongInfo();

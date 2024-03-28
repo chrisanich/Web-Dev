@@ -22,7 +22,7 @@ only the title to be displayed on the tab-->
       
 
     <link rel="stylesheet" type="text/css" href="/CSS/music_player.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/boxicons-2.1.4/css/boxicons.min.css">
     <!--This nav element is created to encompass every single element included in the navbar that,
     links to other pages. This is, every element of the navigation bar-->
     <nav class="navbar">
@@ -118,7 +118,7 @@ only the title to be displayed on the tab-->
             <button><i class='bx bxs-volume-low'></i></button>
             <button><i class='bx bx-edit-alt' ></i></button>
         </div>
-        <button onclick="open_p()"><i class='bx bx-menu-alt-left' ></i></button>
+        <button onclick="open_p()"><i class='bx bx-menu-alt-right' ></i></button>
     </div>
 
     <div class="playing_part">
@@ -135,10 +135,10 @@ only the title to be displayed on the tab-->
         </div>
 
         <div class="control_buttons">
-            <div class="range_slider">
-                <input type="range" min="0" max="100" id="slider" value="0">
-                <p>3:00</p>
-            </div>
+            <div class="volume_slider">
+    <input type="range" min="0" max="1" step="0.01" id="volumeSlider" value="0.5" oninput="adjustVolume(this.value)">
+    <p id="volumeValue">50%</p>
+</div>
 
             <div class="music_player_btns">
                 <button id="previous_btn"><i class='bx bx-skip-previous'></i></button>
