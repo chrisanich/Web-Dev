@@ -21,6 +21,18 @@ document.querySelector('.dropdown').addEventListener('mouseout', function() {
 
 /*Music Player*/ 
 
+let playlist = document.querySelector('.playlist');
+let options = document.querySelector('.options');
+
+function open_p() {
+    playlist.classList.toggle('active');
+}
+
+function sidebar() {
+    options.classList.toggle('active2');
+}
+
+
 let songs = [
     {src: "/songs/Chris Anich - Dime si no.mp3", title: "Dime si no", artist: "Chris Anich"},
     {src: "/songs/Chris Anich - Bienvenidos a la Tierra.mp3", title: "Bienvenidos a la Tierrra", artist: "Chris Anich"},

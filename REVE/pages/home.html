@@ -104,80 +104,78 @@ only the title to be displayed on the tab-->
                 in the catalogue. </p>
         </div>
         <div class="image-container2">
-            <img src="/images/Chris Anich in Trotamundos, Quilpue, Chile.jpg" alt="Rêve Discos cover image"/>
-        </div>
-    </div>
 
-<!--------------------------------------------------------------------------------------------------->
-<div class="music_player">
 
-    <div class="top_bar">
-        <button onclick="sidebar()"></i><i class='bx bx-chevron-right' ></i></button>
-        <div class="options">
-            <button><i class='bx bx-music' ></i></button>
-            <button><i class='bx bxs-volume-low'></i></button>
-            <button><i class='bx bx-edit-alt' ></i></button>
-        </div>
-        <button onclick="open_p()"><i class='bx bx-menu-alt-right' ></i></button>
-    </div>
+            <div class="music_player">
 
-    <div class="playing_part">
-        <div class="img_artist">
-            <img src="\images\Chris Anich Web-Music-Player.jpg" alt="Chris Anich Web-Music-Player">
-        </div>
-    </div>
-
-    <!--control part-->
-    <div class="control_part">
-        <div class="song_title">
-            <p>song title</p>
-            <p>artist name</p>
-        </div>
-
-        <div class="control_buttons">
-            <div class="volume_slider">
-    <input type="range" min="0" max="1" step="0.01" id="volumeSlider" value="0.5" oninput="adjustVolume(this.value)">
-    <p id="volumeValue">50%</p>
-</div>
-
-            <div class="music_player_btns">
-                <button id="previous_btn"><i class='bx bx-skip-previous'></i></button>
-                <button id="play_btn"><i class='bx bx-play'></i></button>
-                <button id="next_btn"><i class='bx bx-skip-next'></i></button>
+                <div class="top_bar">
+                    <button onclick="sidebar()"></i><i class='bx bx-chevron-right' ></i></button>
+                    <div class="options">
+                        <button><i class='bx bx-music' ></i></button>
+                        <button><i class='bx bxs-volume-low'></i></button>
+                        <button><i class='bx bx-edit-alt' ></i></button>
+                    </div>
+                    <button onclick="open_p()"><i class='bx bx-menu-alt-right' ></i></button>
+                </div>
+            
+                <div class="playing_part">
+                    <div class="img_artist">
+                        <img src="\images\Chris Anich Web-Music-Player.jpg" alt="Chris Anich Web-Music-Player">
+                    </div>
+                </div>
+            
+                <!--control part-->
+                <div class="control_part">
+                    <div class="song_title">
+                        <p>song title</p>
+                        <p>artist name</p>
+                    </div>
+            
+                    <div class="control_buttons">
+                        <div class="volume_slider">
+                <input type="range" min="0" max="1" step="0.01" id="volumeSlider" value="0.5" oninput="adjustVolume(this.value)">
+                <p id="volumeValue">50%</p>
+            </div>
+            
+                        <div class="music_player_btns">
+                            <button id="previous_btn"><i class='bx bx-skip-previous'></i></button>
+                            <button id="play_btn"><i class='bx bx-play'></i></button>
+                            <button id="next_btn"><i class='bx bx-skip-next'></i></button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!--playlist song-->
+                <div class="playlist">
+                    <div class="p_song">
+                        <p id="p_title">Dime si no</p>
+                        <p id="p_artist">Chris Anich</p>
+                        <button><i class='bx bx-play'></i></button>
+                    </div>
+            
+                    <div class="p_song">
+                        <p id="p_title">Bienvenidos a la Tierra</p>
+                        <p id="p_artist">Chris Anich</p>
+                        <button><i class='bx bx-play'></i></button>
+                    </div>
+            
+                    <div class="p_song">
+                        <p id="p_title">Esclava de nadie</p>
+                        <p id="p_artist">De Sombras y Siluetas</p>
+                        <button><i class='bx bx-play'></i></button>
+                    </div>
+            
+                    <div class="p_song">
+                        <p id="p_title">Ladrándole a la luna</p>
+                        <p id="p_artist">De Sombras y Siluetas</p>
+                        <button><i class='bx bx-play'></i></button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!--playlist song-->
-    <div class="playlist">
-        <div class="p_song">
-            <p id="p_title">Dime si no</p>
-            <p id="p_artist">Chris Anich</p>
-            <button><i class='bx bx-play'></i></button>
-        </div>
-
-        <div class="p_song">
-            <p id="p_title">Bienvenidos a la Tierra</p>
-            <p id="p_artist">Chris Anich</p>
-            <button><i class='bx bx-play'></i></button>
-        </div>
-
-        <div class="p_song">
-            <p id="p_title">Esclava de nadie</p>
-            <p id="p_artist">De Sombras y Siluetas</p>
-            <button><i class='bx bx-play'></i></button>
-        </div>
-
-        <div class="p_song">
-            <p id="p_title">Ladrándole a la luna</p>
-            <p id="p_artist">De Sombras y Siluetas</p>
-            <button><i class='bx bx-play'></i></button>
-        </div>
-    </div>
-</div>
-    
-
-
+<!--------------------------------------------------------------------------------------------------->
 <!-- Footer -->
 <footer>    
     <nav class="navbar">
@@ -190,20 +188,7 @@ only the title to be displayed on the tab-->
             </ul>
         </div>
     </nav>
-  </footer>
-  <script src="/reve.js"></script>
-<script>
-    let playlist = document.querySelector('.playlist');
-    let options = document.querySelector('.options');
-
-    function open_p() {
-        playlist.classList.toggle('active');
-    }
-
-    function sidebar() {
-        options.classList.toggle('active2');
-    }
-
-</script>
+</footer>
+<script src="/reve.js"></script>
 </body>
 </html>

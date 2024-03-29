@@ -16,6 +16,7 @@ img {
     min-width: 300px;
     width: 95%;
     height: auto;
+    border-radius: 18px;
 }
 
 body {
@@ -105,7 +106,7 @@ p {
 .text-container1 {
     width: 100%;
     font-size: 25px; /* adjust the value to change the text size */
-    text-align: justify; 
+    text-align: left; 
 }
 
 .image-container2 {
@@ -115,7 +116,7 @@ p {
 .text-container2 {
     width: 100%;
     font-size: 25px; /* adjust the value to change the text size */
-    text-align: justify; 
+    text-align: left; 
 }
 
 img {
