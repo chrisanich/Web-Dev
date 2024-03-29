@@ -4,6 +4,7 @@
     margin: 40px 400px auto; /* top margin is 20px, right and left margins are auto, bottom margin is 0 */
     justify-content: center; /* centers content horizontally */
     align-items: center; /* centers content vertically */
+    font-size: 25px;
   }
 
 @media screen and (max-width: 768px) {
@@ -16,11 +17,15 @@ img {
     min-width: 300px;
     width: 95%;
     height: auto;
+    border-radius: 18px;
 }
 
 body {
     background-color: #f0f0f0;
     margin: 0vh;    
+    background-image: url('/images/freepik_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page {
@@ -55,6 +60,7 @@ h4 {
 p {
     
     color: rgb(114, 74, 154);
+    font-size: 25px;
 }
 
 /*****************************************************************/
@@ -105,7 +111,7 @@ p {
 .text-container1 {
     width: 100%;
     font-size: 25px; /* adjust the value to change the text size */
-    text-align: justify; 
+    text-align: left; 
 }
 
 .image-container2 {
@@ -115,7 +121,7 @@ p {
 .text-container2 {
     width: 100%;
     font-size: 25px; /* adjust the value to change the text size */
-    text-align: justify; 
+    text-align: left; 
 }
 
 img {
@@ -158,10 +164,4 @@ h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     margin-bottom: 20px; /*Margin after Record Label to give it a more appealing aspect to the text*/
-}
-
-
-p {
-    
-    color: rgb(114, 74, 154);
 }

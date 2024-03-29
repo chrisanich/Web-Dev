@@ -33,7 +33,7 @@
 .text-container1 {
     width: 100%;
     font-size: 25px; /* adjust the value to change the text size */
-    text-align: justify; 
+    text-align: left; 
 }
 
 .image-container2 {
@@ -43,21 +43,27 @@
 .text-container2 {
     width: 100%;
     font-size: 25px; /* adjust the value to change the text size */
-    text-align: justify; 
+    text-align: left; 
 }
 
 img {
     min-width: 300px; /* adjust this value as needed */
     width: 95%;
     height: auto;
+    border-radius: 18px
 }
 
-
+.video {
+    border-radius: 18px; /* This will make the videos round */
+}
 
 body {
     background-color: #f0f0f0;
-    margin: 0vh;    
-}
+    margin: 0vh;
+    background-image: url('/images/freepik_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 
 .page {
     padding: 40px;
@@ -90,7 +96,6 @@ h4 {
 
 
 p {
-    
     color: rgb(114, 74, 154);
 }
 

@@ -59,7 +59,7 @@
 
     <div class="content1">
         <div class="image-container1">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/FIpKHsXw6Xg">
+            <iframe class="video" width="640" height="360" src="https://www.youtube.com/embed/FIpKHsXw6Xg">
             </iframe>
         </div>
         <div class="text-container1">
@@ -73,75 +73,6 @@
     </div>
 
 <!--------------------------------------------------------------------------------------------------->
-<div class="music_player">
-
-    <div class="top_bar">
-        <button onclick="sidebar()"></i><i class='bx bx-chevron-right' ></i></button>
-        <div class="options">
-            <button><i class='bx bx-music' ></i></button>
-            <button><i class='bx bxs-volume-low'></i></button>
-            <button><i class='bx bx-edit-alt' ></i></button>
-        </div>
-        <button onclick="open_p()"><i class='bx bx-menu-alt-left' ></i></button>
-    </div>
-
-    <div class="playing_part">
-        <div class="img_artist">
-            <img src="\images\Chris Anich Web-Music-Player.jpg" alt="Chris Anich Web-Music-Player">
-        </div>
-    </div>
-
-    <!--control part-->
-    <div class="control_part">
-        <div class="song_title">
-            <p>song title</p>
-            <p>artist name</p>
-        </div>
-
-        <div class="control_buttons">
-            <div class="range_slider">
-                <input type="range" min="0" max="100" id="slider" value="0">
-                <p>3:00</p>
-            </div>
-
-            <div class="music_player_btns">
-                <button id="previous"><i class='bx bx-skip-previous'></i></button>
-                <button id="play_btn"><i class='bx bx-play'></i></button>
-                <button id="previous"><i class='bx bx-skip-next'></i></button>
-            </div>
-        </div>
-    </div>
-
-    <!--playlist song-->
-    <div class="playlist">
-        <div class="p_song">
-            <p id="p_title">Dime si no</p>
-            <p id="p_artist">Chris Anich</p>
-            <button><i class='bx bx-play'></i></button>
-        </div>
-
-        <div class="p_song">
-            <p id="p_title">Bienvenidos a la Tierra</p>
-            <p id="p_artist">Chris Anich</p>
-            <button><i class='bx bx-play'></i></button>
-        </div>
-
-        <div class="p_song">
-            <p id="p_title">song name</p>
-            <p id="p_artist">De Sombras y Siluetas</p>
-            <button><i class='bx bx-play'></i></button>
-        </div>
-
-        <div class="p_song">
-            <p id="p_title">song name</p>
-            <p id="p_artist">De Sombras y Siluetas</p>
-            <button><i class='bx bx-play'></i></button>
-        </div>
-    </div>
-</div>
-    
-
-
 <!-- Footer -->
 <footer>    
     <nav class="navbar">
@@ -156,18 +87,5 @@
     </nav>
   </footer>
   <script src="/reve.js"></script>
-<script>
-    let playlist = document.querySelector('.playlist');
-    let options = document.querySelector('.options');
-
-    function open_p() {
-        playlist.classList.toggle('active');
-    }
-
-    function sidebar() {
-        options.classList.toggle('active2');
-    }
-
-</script>
 </body>
 </html>

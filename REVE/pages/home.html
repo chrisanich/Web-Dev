@@ -17,6 +17,12 @@ only the title to be displayed on the tab-->
     one for the menu (that will be used in every page and a particular one for the home page)-->
     <link rel="stylesheet" type="text/css" href="/CSS/menu_style.css">
     <link rel="stylesheet" type="text/css" href="/CSS/home_style.css">
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+      
+
+    <link rel="stylesheet" type="text/css" href="/CSS/music_player.css">
+    <link rel="stylesheet" type="text/css" href="/boxicons-2.1.4/css/boxicons.min.css">
     <!--This nav element is created to encompass every single element included in the navbar that,
     links to other pages. This is, every element of the navigation bar-->
     <nav class="navbar">
@@ -98,11 +104,78 @@ only the title to be displayed on the tab-->
                 in the catalogue. </p>
         </div>
         <div class="image-container2">
-            <img src="/images/Chris Anich in Trotamundos, Quilpue, Chile.jpg" alt="Rêve Discos cover image"/>
+
+
+            <div class="music_player">
+
+                <div class="top_bar">
+                    <button onclick="sidebar()"></i><i class='bx bx-chevron-right' ></i></button>
+                    <div class="options">
+                        <button><i class='bx bx-music' ></i></button>
+                        <button><i class='bx bxs-volume-low'></i></button>
+                        <button><i class='bx bx-edit-alt' ></i></button>
+                    </div>
+                    <button onclick="open_p()"><i class='bx bx-menu-alt-right' ></i></button>
+                </div>
+            
+                <div class="playing_part">
+                    <div class="img_artist">
+                        <img src="\images\Chris Anich Web-Music-Player.jpg" alt="Chris Anich Web-Music-Player">
+                    </div>
+                </div>
+            
+                <!--control part-->
+                <div class="control_part">
+                    <div class="song_title">
+                        <p>song title</p>
+                        <p>artist name</p>
+                    </div>
+            
+                    <div class="control_buttons">
+                        <div class="volume_slider">
+                <input type="range" min="0" max="1" step="0.01" id="volumeSlider" value="0.5" oninput="adjustVolume(this.value)">
+                <p id="volumeValue">50%</p>
+            </div>
+            
+                        <div class="music_player_btns">
+                            <button id="previous_btn"><i class='bx bx-skip-previous'></i></button>
+                            <button id="play_btn"><i class='bx bx-play'></i></button>
+                            <button id="next_btn"><i class='bx bx-skip-next'></i></button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!--playlist song-->
+                <div class="playlist">
+                    <div class="p_song">
+                        <p id="p_title">Dime si no</p>
+                        <p id="p_artist">Chris Anich</p>
+                        <button><i class='bx bx-play'></i></button>
+                    </div>
+            
+                    <div class="p_song">
+                        <p id="p_title">Bienvenidos a la Tierra</p>
+                        <p id="p_artist">Chris Anich</p>
+                        <button><i class='bx bx-play'></i></button>
+                    </div>
+            
+                    <div class="p_song">
+                        <p id="p_title">Esclava de nadie</p>
+                        <p id="p_artist">De Sombras y Siluetas</p>
+                        <button><i class='bx bx-play'></i></button>
+                    </div>
+            
+                    <div class="p_song">
+                        <p id="p_title">Ladrándole a la luna</p>
+                        <p id="p_artist">De Sombras y Siluetas</p>
+                        <button><i class='bx bx-play'></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-<script src="/reve.js"></script>
 
+<!--------------------------------------------------------------------------------------------------->
 <!-- Footer -->
 <footer>    
     <nav class="navbar">
@@ -115,6 +188,7 @@ only the title to be displayed on the tab-->
             </ul>
         </div>
     </nav>
-  </footer>
+</footer>
+<script src="/reve.js"></script>
 </body>
 </html>

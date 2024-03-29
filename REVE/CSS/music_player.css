@@ -8,7 +8,7 @@
 /*The body goes here*/
 
     position: relative;
-    width: 400px;
+    width: 100%;
     height: 550px;
     border-radius: 18px;
     background: #566573;
@@ -233,16 +233,16 @@
                 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
-/*range slider part*/
-.range_slider {
-    width: 60%;
+/*volume slider part*/
+.volume_slider {
+    width: 40%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 
-.range_slider p {
+.volume_slider p {
     font-size: 13px;
 }
 
@@ -283,6 +283,6 @@ input[type=range]::-webkit-slider-thumb {
     /* Other styles... */
 }
 
-.control_buttons .range_slider p {
+.control_buttons .volume_slider p {
     color: #fff;
 }
