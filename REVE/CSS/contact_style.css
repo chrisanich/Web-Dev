@@ -1,19 +1,59 @@
 .email-form {
     margin: 50px auto;
-    width: 50%;
+    width: 30%;
     padding: 1em;
     background-color: #f2f2f2;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 #333;
 }
 
+.contact_title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.input_container input,
+.input_container textarea {
+    width: 60%;
+}
+
+.input_container textarea {
+    height: 100px;
+}
+
+.email-form .button_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-form .button_container p {
+    flex: 1;
+    text-align:left;
+}
+
+.email-form .button_container button {
+    flex: none;
+    width: 100px;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
 .policy {
     display: grid;
     gap: 10px;
-    margin: 50px 650px auto; /* top margin is 20px, right and left margins are auto, bottom margin is 0 */
-    justify-content: center; /* centers content horizontally */
-    align-items: center; /* centers content vertically */
-  }
+    margin: 50px 650px auto;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (max-width: 768px) {
     .policy {
@@ -29,7 +69,7 @@ img {
 
 body {
     background-color: #f0f0f0;
-    margin: 0vh;    
+    margin: 0;
     background-image: url('/images/freepik_background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,34 +79,15 @@ body {
     padding: 40px;
 }
 
-h1 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-
-h3 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-
-h3 {
-    /* key:value*/
+h1, h3, h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
 }
 
 h4 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    margin-bottom: 20px; /*Margin after Record Label to give it a more appealing aspect to the text*/
+    margin-bottom: 20px;
 }
-
 
 p {
-    
     color: rgb(114, 74, 154);
 }
-

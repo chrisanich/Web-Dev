@@ -85,95 +85,87 @@ only the title to be displayed on the tab-->
                 record label working from South America 
                 to the world. Its chief music genres are rock, 
                 pop and electronic music. Although most of its 
-                bands are from Chile, international artists work 
-                in the catalogue. </p>
+                bands are from Chile, international artists will 
+                be soon in our catalogue. </p>
         </div>
     </div>
 <!------------------------------------------------------------------------------->
-    <div class="content2">
-        <div class="text-container2">
-            <h1>Our music</h1>
-            <h3>Rock, pop and electronic</h3>
-            <h3>music</h3>
-            <h4></h4>
-            <p>Rêve Discos is a Chilean independent 
-                record label working from South America 
-                to the world. Its chief music genres are rock, 
-                pop and electronic music. Although most of its 
-                bands are from Chile, international artists work 
-                in the catalogue. </p>
-        </div>
-        <div class="image-container2">
+<div class="content2">
+    <div class="text-container2">
+        <h1>Our music</h1>
+        <h3>Rock, pop and electronic</h3>
+        <h3>music</h3>
+        <h4></h4>
+        <p>Our mission is to produce, distribute and publish the music of 
+            our artists so that according to their talent, they have the 
+            opportunity to show their full potential to their audience.
+            We are a small record label, but over time we have been able to 
+            position ourselves widely within the Latin American scene and 
+            soon in Europe. 
+        </p>
+    </div>
+    <div class="image-container2">
 
-
-            <div class="music_player">
-
-                <div class="top_bar">
-                    <button onclick="sidebar()"></i><i class='bx bx-chevron-right' ></i></button>
-                    <div class="options">
-                        <button><i class='bx bx-music' ></i></button>
-                        <button><i class='bx bxs-volume-low'></i></button>
-                        <button><i class='bx bx-edit-alt' ></i></button>
-                    </div>
-                    <button onclick="open_p()"><i class='bx bx-menu-alt-right' ></i></button>
+        <div class="music_player">
+            <div class="top_bar">       
+                <button onclick="open_p()"><i class='bx bx-menu-alt-right' ></i></button>
+            </div>
+            <div class="playing_part">
+                <div class="img_artist">
+                    <img src="\images\Chris Anich Web-Music-Player.jpg" alt="Chris Anich Web-Music-Player">
                 </div>
-            
-                <div class="playing_part">
-                    <div class="img_artist">
-                        <img src="\images\Chris Anich Web-Music-Player.jpg" alt="Chris Anich Web-Music-Player">
-                    </div>
-                </div>
-            
-                <!--control part-->
-                <div class="control_part">
-                    <div class="song_title">
-                        <p>song title</p>
-                        <p>artist name</p>
-                    </div>
-            
-                    <div class="control_buttons">
-                        <div class="volume_slider">
-                <input type="range" min="0" max="1" step="0.01" id="volumeSlider" value="0.5" oninput="adjustVolume(this.value)">
-                <p id="volumeValue">50%</p>
             </div>
             
-                        <div class="music_player_btns">
-                            <button id="previous_btn"><i class='bx bx-skip-previous'></i></button>
-                            <button id="play_btn"><i class='bx bx-play'></i></button>
-                            <button id="next_btn"><i class='bx bx-skip-next'></i></button>
-                        </div>
-                    </div>
+            <!--control part-->
+            <div class="control_part">
+                <div class="song_title">
+                    <p>song title</p>
+                    <p>artist name</p>
                 </div>
             
-                <!--playlist song-->
-                <div class="playlist">
-                    <div class="p_song">
-                        <p id="p_title">Dime si no</p>
-                        <p id="p_artist">Chris Anich</p>
-                        <button><i class='bx bx-play'></i></button>
+                <div class="control_buttons">
+                    <div class="volume_slider">
+                        <input type="range" min="0" max="1" step="0.01" id="volumeSlider" value="0.5" oninput="adjustVolume(this.value)">
+                            <p id="volumeValue">50%</p>
                     </div>
             
-                    <div class="p_song">
-                        <p id="p_title">Bienvenidos a la Tierra</p>
-                        <p id="p_artist">Chris Anich</p>
-                        <button><i class='bx bx-play'></i></button>
+                    <div class="music_player_btns">
+                        <button id="prev_btn"><i class='bx bx-skip-previous'></i></button>
+                        <button id="play_btn"><i class='bx bx-play'></i></button>
+                        <button id="next_btn"><i class='bx bx-skip-next'></i></button>
                     </div>
+                </div>
+            </div>
             
-                    <div class="p_song">
-                        <p id="p_title">Esclava de nadie</p>
-                        <p id="p_artist">De Sombras y Siluetas</p>
-                        <button><i class='bx bx-play'></i></button>
-                    </div>
+            <!--playlist song-->
+            <div class="playlist">
+                <div class="p_song">
+                    <p id="p_title">Dime si no</p>
+                    <p id="p_artist">Chris Anich</p>
+                    <button><i class='bx bx-play'></i></button>
+                </div>
             
-                    <div class="p_song">
-                        <p id="p_title">Ladrándole a la luna</p>
-                        <p id="p_artist">De Sombras y Siluetas</p>
-                        <button><i class='bx bx-play'></i></button>
-                    </div>
+                <div class="p_song">
+                    <p id="p_title">Bienvenidos a la Tierra</p>
+                    <p id="p_artist">Chris Anich</p>
+                    <button><i class='bx bx-play'></i></button>
+                </div>
+            
+                <div class="p_song">
+                    <p id="p_title">Esclava de nadie</p>
+                    <p id="p_artist">De Sombras y Siluetas</p>
+                    <button><i class='bx bx-play'></i></button>
+                </div>
+            
+                <div class="p_song">
+                    <p id="p_title">Ladrándole a la luna</p>
+                    <p id="p_artist">De Sombras y Siluetas</p>
+                    <button><i class='bx bx-play'></i></button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 <!--------------------------------------------------------------------------------------------------->
 <!-- Footer -->
@@ -182,8 +174,10 @@ only the title to be displayed on the tab-->
         <div class="navbar__container">
             <div class="copyright">© Rêve Discos 2024</div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="policy.html" class="navbar__links"> Policy </a>
+                <li class="navbar__item"><a href="https://www.facebook.com/revediscos/" class="navbar__links" target="_blank"><i class='bx bxl-facebook-square'></i></a></li>
+                <li class="navbar__item"><a href="https://www.instagram.com/revediscos/" class="navbar__links" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                <li class="navbar__item"><a href="https://www.youtube.com/channel/UCzPxtDfjRsNis3VuB5lI03A" class="navbar__links" target="_blank"><i class='bx bxl-youtube'></i></a></li>
+                <li class="navbar__item"><a href="policy.html" class="navbar__links" target="_blank">Policy</a>
                 </li>
             </ul>
         </div>

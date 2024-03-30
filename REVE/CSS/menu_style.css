@@ -30,7 +30,6 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  margin-bottom: 20;
 }
 
 #navbar__logo {
@@ -213,6 +212,7 @@ footer {
   background-color: rgb(164, 54, 155);
   color: white;
   margin-top: 20px;
+  flex-shrink: 0;
 }
 
 .copyright {

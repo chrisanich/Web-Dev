@@ -5,6 +5,7 @@
     <title>Rêve | Contact</title>
     <link rel="stylesheet" type="text/css" href="/CSS/menu_style.css">
     <link rel="stylesheet" type="text/css" href="/CSS/contact_style.css">
+    <link rel="stylesheet" type="text/css" href="/boxicons-2.1.4/css/boxicons.min.css">
     <!-- In the body, we create a div to contain the menu. -->
     <nav class="navbar">
         <div class="navbar__container">
@@ -36,29 +37,45 @@
     <!-- Enter your email -->
 
     <div class="email-form">
-        <h1>Contact</h1>
-        <h2>First name: <input type="text" id="firstnamex" value=""></h2>
-        <h2>Last name: <input type="text" id="lastnamex" value=""></h2>
-        <h2>Email: <input type="text" id="emailaddressx" value=""></h2>
-        <h2>Message: <input type="text" id="usermessagex" value=""></h2>
-        <button type="button" onclick="email()">Submit</button>
-        <p><label id="answerx"></label></p>
+        <div class="contact_title">
+            <h1>Contact</h1>
+        </div>
+        <div class="input_container">
+            <h2>First name:</h2><input type="text" id="firstnamex" value="">
+        </div>
+        <div class="input_container">
+            <h2>Last name:</h2><input type="text" id="lastnamex" value="">
+        </div>
+        <div class="input_container">
+            <h2>E-mail address:</h2><input type="text" id="emailaddressx" value="">
+        </div>
+        <div class="input_container">
+            <h2>Phone number:</h2><input type="text" id="phonex" value=""></h2>
+        </div>
+        <div class="input_container">    
+            <h2>Message:</h2><textarea id="usermessagex"></textarea>
+        </div>
+        <div class="button_container">
+            <p id="answerx"></p>
+            <button type="button" onclick="contact_form()"><h3>Submit</h3></button>
+        </div>
     </div>
 <!------------------------------------------------------------------------------->
-
 <!-- Footer -->
 <footer>    
     <nav class="navbar">
         <div class="navbar__container">
             <div class="copyright">© Rêve Discos 2024</div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="policy.html" class="navbar__links"> Policy </a>
+                <li class="navbar__item"><a href="https://www.facebook.com/revediscos/" class="navbar__links" target="_blank"><i class='bx bxl-facebook-square'></i></a></li>
+                <li class="navbar__item"><a href="https://www.instagram.com/revediscos/" class="navbar__links" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                <li class="navbar__item"><a href="https://www.youtube.com/channel/UCzPxtDfjRsNis3VuB5lI03A" class="navbar__links" target="_blank"><i class='bx bxl-youtube'></i></a></li>
+                <li class="navbar__item"><a href="policy.html" class="navbar__links" target="_blank">Policy</a>
                 </li>
             </ul>
         </div>
     </nav>
-  </footer>
-  <script src="/reve.js"></script>
+</footer>
+<script src="/reve.js"></script>
 </body>
 </html>
