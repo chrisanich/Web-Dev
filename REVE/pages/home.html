@@ -125,7 +125,10 @@ only the title to be displayed on the tab-->
             
                 <div class="control_buttons">
                     <div class="volume_slider">
-                        <input type="range" min="0" max="1" step="0.01" id="volumeSlider" value="0.5" oninput="adjustVolume(this.value)">
+                        <div class="volume_control">
+                            <p>Volume</p>
+                            <input type="range" min="0" max="1" step="0.01" id="volumeSlider" value="0.85" oninput="adjustVolume(this.value)">
+                        </div>
                             <p id="volumeValue">50%</p>
                     </div>
             
