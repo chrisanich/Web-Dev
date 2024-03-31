@@ -88,10 +88,9 @@ h3 {
 }
 
 h4 {
-    /* key:value*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
-    margin-bottom: 20px; /*Margin after Record Label to give it a more appealing aspect to the text*/
+    margin-bottom: 20px;
 }
 
 
@@ -99,3 +98,16 @@ p {
     color: rgb(114, 74, 154);
 }
 
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.icons-container .bx {
+    font-size: 50px;
+}
+
+.social__links i {
+    color: #000; 
+}

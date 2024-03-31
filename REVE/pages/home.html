@@ -15,14 +15,14 @@ only the title to be displayed on the tab-->
     <!--In the beginning of the body we create a link tag to reference the CSS files that will
     define the design the style of every element inside the body. In this particular case,
     one for the menu (that will be used in every page and a particular one for the home page)-->
-    <link rel="stylesheet" type="text/css" href="/CSS/menu_style.css">
-    <link rel="stylesheet" type="text/css" href="/CSS/home_style.css">
-    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--> 
-      
-
-    <link rel="stylesheet" type="text/css" href="/CSS/music_player.css">
-    <link rel="stylesheet" type="text/css" href="/boxicons-2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/menu_style.css"> <!--Menu CSS, that will be the same in every single webpage-->
+    <link rel="stylesheet" type="text/css" href="/CSS/home_style.css"> <!--Home CSS defines the style of the homepage-->
+    <link rel="stylesheet" type="text/css" href="/CSS/music_player.css"> <!--Music player CSS defines the style of the Music player-->
+    <link rel="stylesheet" type="text/css" href="/boxicons-2.1.4/css/boxicons.min.css"> <!--This Boxicon CSS is special, 
+                                                                                        it does not retrieve the icons from Boxicon webpage,
+                                                                                        I prefered to download the package and store it in
+                                                                                        the project folder in case the site is removed from the web.
+                                                                                        There is no illegal and it use is allowed according the author-->
     <!--This nav element is created to encompass every single element included in the navbar that,
     links to other pages. This is, every element of the navigation bar-->
     <nav class="navbar">
@@ -64,6 +64,7 @@ only the title to be displayed on the tab-->
                         <li><a href="desombras.html">De Sombras y Siluetas</a></li>
                     </ul>
                 </li>
+                <!--This li element give us a link to the contact.html page-->
                 <li class="navbar__item">
                     <a href="contact.html" class="navbar__links"> Contact </a>
                 </li>
@@ -71,11 +72,15 @@ only the title to be displayed on the tab-->
         </div>
     </nav>
 
-    <!-- Create a welcome page introducing the Rêve Discos (Independent Chilean Record Label) -->
+<!-- Create a welcome page introducing the Rêve Discos (Independent Chilean Record Label) -->
+
+<!-- In this page we have 2 content classes or blocks that swap between an image and text and text and music player-->
+<!--The first class "content1" will store an image (image-container1) inside the div element, that is a legitimate picture of the Record Label-->
     <div class="content1">
         <div class="image-container1">
             <img src="/images/Reve cover.jpg" alt="Rêve Discos cover image"/>
         </div>
+<!--The second class "text-container1" will store the text that will be displayed in the home page, introducing Rêve Discos-->
         <div class="text-container1">
             <h1>Rêve Discos</h1>
             <h3>Chilean Independent 
@@ -90,6 +95,9 @@ only the title to be displayed on the tab-->
         </div>
     </div>
 <!------------------------------------------------------------------------------->
+<!--The second class "content2" stores text first introducing the record label music (text-container2) 
+    and then a music player inside the image-container2. The name of the class was not change to keep the configuration
+    of the 1st block-->
 <div class="content2">
     <div class="text-container2">
         <h1>Our music</h1>
@@ -105,7 +113,10 @@ only the title to be displayed on the tab-->
         </p>
     </div>
     <div class="image-container2">
-
+<!--Below we have the class "music_player" that stores every element of it, buttons, picture, information of each of the 4 songs stored-->
+<!--There is a left-top button to display the playlist. On the centre, there is a playing_part class with an image to give it some style, 
+    and a control_part that is divided into song_title class (songs and artists information), control_buttons (with the volume slider and 
+    player buttons -->
         <div class="music_player">
             <div class="top_bar">       
                 <button onclick="open_p()"><i class='bx bx-menu-alt-right' ></i></button>
@@ -129,7 +140,7 @@ only the title to be displayed on the tab-->
                             <p>Volume</p>
                             <input type="range" min="0" max="1" step="0.01" id="volumeSlider" value="0.85" oninput="adjustVolume(this.value)">
                         </div>
-                            <p id="volumeValue">50%</p>
+                            <p id="volumeValue">85%</p>
                     </div>
             
                     <div class="music_player_btns">
@@ -141,25 +152,29 @@ only the title to be displayed on the tab-->
             </div>
             
             <!--playlist song-->
+            <!--Here, we have the playlist class, which stores a "p_song" class for the information of each of the songs
+            4 of them (song title and artist name). Each song is stored in different div elements to be able to select among them
+            when playing the music -->
             <div class="playlist">
+                <!--1st song and its information (song title and artist name)-->
                 <div class="p_song">
                     <p id="p_title">Dime si no</p>
                     <p id="p_artist">Chris Anich</p>
                     <button><i class='bx bx-play'></i></button>
                 </div>
-            
+                <!--2nd song and its information (song title and artist name)-->
                 <div class="p_song">
                     <p id="p_title">Bienvenidos a la Tierra</p>
                     <p id="p_artist">Chris Anich</p>
                     <button><i class='bx bx-play'></i></button>
                 </div>
-            
+                <!--3rd song and its information (song title and artist name)-->
                 <div class="p_song">
                     <p id="p_title">Esclava de nadie</p>
                     <p id="p_artist">De Sombras y Siluetas</p>
                     <button><i class='bx bx-play'></i></button>
                 </div>
-            
+                <!--4th song and its information (song title and artist name)-->
                 <div class="p_song">
                     <p id="p_title">Ladrándole a la luna</p>
                     <p id="p_artist">De Sombras y Siluetas</p>
@@ -172,6 +187,10 @@ only the title to be displayed on the tab-->
 
 <!--------------------------------------------------------------------------------------------------->
 <!-- Footer -->
+<!--This is the footer or the bottom of the page. It is the same in each of the websites. It is very similar to the Menu bar, but it contains different
+elements, like the brand of the Record Label (it is not a link), the links to Rêve Discos social media and the Policy website. All this links are opened in
+different windows not to interfere in the experience of the user while navigating on the website. It is important to hightlight that the classes navbar
+and navbar__container are the same of the menu to use the same CSS file and keep the style of the site-->
 <footer>    
     <nav class="navbar">
         <div class="navbar__container">
@@ -185,7 +204,10 @@ only the title to be displayed on the tab-->
             </ul>
         </div>
     </nav>
-</footer>
+</footer> <!--Here we close the footer-->
+
+<!--It is recommended to put the line with the Javascript file before the end of the body of the webpage according to several visited websites.
+In this way we are sure that it will work without problems-->
 <script src="/reve.js"></script>
 </body>
-</html>
+</html> <!--Here we finally close the body and html tags-->
