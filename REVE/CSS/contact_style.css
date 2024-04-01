@@ -7,6 +7,12 @@
     box-shadow: 0 0 10px 0 #333;
 }
 
+@media screen and (max-width: 768px) {
+    .email-form {
+        grid-template-columns: 1fr;
+    }
+}
+
 .contact_title {
     text-align: left;
     margin-bottom: 20px;

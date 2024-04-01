@@ -1,3 +1,37 @@
+/*This (*) is an universal calling for every element of this css file.*/
+* {
+  box-sizing: border-box; /*This tells the browser that the bpadding and border of the box are inlcuded in the total width*/
+  margin: 0; /*This says the browser that I do not want margins. I do not want white spaces baside the navigation menu*/
+  padding: 0; /*Padding 0 not to include spaces inside the boundaries of the elements. We want to remove the padding of all elements by setting them to 0*/
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*I want to use the same font family for my whole site*/
+} 
+
+/*This applies to the whole navigation or menu bar*/
+.navbar {
+  background: #131313; /*Black will be the colour of the navbar*/
+  height: 80px; /*The height will be 80px, not to tall or short*/
+  display: flex; /*This is to have the elements in a row for aesthetic purposes*/
+  justify-content: center; /*This is to have the elements justified in the navbar*/
+  align-items: center; /*Let's align the items in the center of the navigation bar*/
+  font-size: 1.2rem; /*This is the size of the font on the navbar. It was adjusted by trial and error not to be readable and appealing*/ 
+  position: sticky; /*This is to have the elements always visible on the top of the pages*/
+  top: 0; /*We want the navbar to the top of the page without spaces*/
+  z-index: 999; /*z-index 999 says that we want the navbar to be always on to of all the other elements of the page*/
+}
+
+/*This container is for the logo on the navigation bar*/
+#navbar__logo {
+  background-color: #0f0707; /*The colour of the logo background is set to black, the same of the navbar (aesthetic purposes)*/
+  background-size: 100%; /*The size of the background is 100% to cover the whole container*/
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-left: 25px;
+}
+
+/*This block is for image of the Record label logo (png), which is to the left of the navbar*/
 #navbar__logo img {
   height: 100px;
   width: 80px;
@@ -10,39 +44,6 @@
   font-size: 20px; /* replace with your desired font size */
   color: #ffffff; /* replace with your desired color */
   margin-left: 20px; /* replace with your desired distance */
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Kumbh Sans', sans-serif;
-} 
-
-.navbar {
-  
-  background: #131313;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-#navbar__logo {
-  background-color: #0f0707;
-  background-image: linear-gradient(to top, #ffffff 0%, #2e2623 100%);
-  background-size: 100%;
-  background-clip: text;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  padding-left: 25px;
 }
 
 .navbar__menu {
