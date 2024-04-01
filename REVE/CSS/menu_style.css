@@ -1,6 +1,6 @@
 /*This (*) is an universal calling for every element of this css file.*/
 * {
-  box-sizing: border-box; /*This tells the browser that the bpadding and border of the box are inlcuded in the total width*/
+  box-sizing: border-box; /*This tells the browser that the bpadding and border of the box are included in the total width*/
   margin: 0; /*This says the browser that I do not want margins. I do not want white spaces baside the navigation menu*/
   padding: 0; /*Padding 0 not to include spaces inside the boundaries of the elements. We want to remove the padding of all elements by setting them to 0*/
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*I want to use the same font family for my whole site*/
@@ -38,79 +38,79 @@
 }
 
 #navbar__logo span {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* replace with your desired font */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*I want to use the same font family for my whole site*/
   font-size: 1.5rem; /*This is to have the same size of letter between the logo and menu items*/
   color: #ffffff; /*This to have the letters of the logo white like the menu ones*/
   margin-left: -100px; /*This is to have the logo and the menu words or items in the same line*/
 }
 
+/*This block is for the elements inside the menu,that is, the Word options of the menu (About, Artist, Chris Anich,
+De Sombras y Siluetas and Contact)*/
 .navbar__menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
+  display: flex; /*This is to have the elements in a row for aesthetic purposes and to proportions*/
+  align-items: center; /*This is to have the elements centred and aligned in the navbar*/
+  list-style: none; /*This is to delete the bullet points of the element of the menu*/
 }
 
 .navbar__links {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*I want to use the same font family for my whole site*/
+  color: #fff; /*This line is to give a white colour to the menu words, to have contrast with the navbar, which is black*/
+  text-decoration: none; /*This line is to avoid underlines on the menu items*/
+  padding: 0 1rem; /*This line gives us spaces between the menu items*/
 }
 
 .navbar__container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1400px;
+  display: flex; /*This is to have the elements in a row and not in a column. If I delete this line, the elements will also move to the centre of the navbar*/
+  justify-content: space-between; /*With this we have space between the elements of the navbar__container*/
+  width: 100%; /*This adjust the elements of the navbar to the width of the page*/
+  max-width: 1400px; /*This is the maximum width of the navbar. If I delete this line, the navbar will be toowide and the elements will move to the right*/
 }
 
 .dropdown {
-  position: relative;
+  position: relative; /*This line is to have the elements of the dropdown menu (Artists) aligned to the left and not to trespass the Artist word to the right*/
 }
 
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #131313;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  display: none; /*This line will keep the elements of the dropdown menu (Artists) hidden until the mouse is over the word Artists*/
+  position: absolute; /*This is to control that the elements of the dropdown menu (Artists) respect the position of the Artist word and stay below it*/
+  background-color: #131313; /*This is the background colour of the elements of the Artist dropdown menu. If I delete it, instead of being black, it will 
+                                be transparent and will lose constrast (compared to the background image of the website)*/
+  min-width: 160px; /*This is to define a minimum width of the elements of the Artists dropdown menu. I do not define it, the elements will be too narrow*/
 }
 
+/*This block will keep the elements of the dropdown menu Artists organised, with the same size, 
+white letters and spaces between them*/
 .dropdown-menu a {
   color: #fff;
   padding: 12px 16px;
-  text-decoration: none;
+  text-decoration: none; /*This line avoids the underlines of the elements of the dropdown menu Artists)*/
   display: block;
 }
 
+/*This block deletes the bullet points of the elements of the dropdown menu Artists*/
 .dropdown-menu li {
   list-style: none;
 }
 
+/*This block keeps the colour of the elements of the dropdown menu Artists white when the background is back, 
+and black when the mouse is over them (white background)*/
 .dropdown-menu a:hover {
   background-color: #f1f1f1;
   color: black;
 }
 
+
 footer {
-  text-align: right;
+  background-color: rgb(164, 54, 155); /*This line gives us a background colour to the footer of the pages.
+  Because the padding is 3px, this will be visible like a frame of the footer*/ 
   padding: 3px;
-  background-color: rgb(164, 54, 155);
-  color: white;
-  margin-top: 20px;
-  flex-shrink: 0;
+  color: white; /*This line colours the letters of the footer white (© Rêve Discos 2024)*/
+  margin-top: 20px; /*With this we give a space between the last element of the page and the footer, that is 20 px*/
 }
 
 .copyright {
-  color: rgb(227, 227, 227);
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 1.5rem;
+  color: rgb(fff); /*This is to give a white colour to the footer words (© Rêve Discos 2024)*/
+  text-decoration: none; /*This line is to avoid underlines on the footer words (© Rêve Discos 2024)*/
+  font-size: 1.5rem; /*This is the size of the letters of the footer (© Rêve Discos 2024). It is the same for the other elements of the
+  footer and navbar (menu)*/
 }
