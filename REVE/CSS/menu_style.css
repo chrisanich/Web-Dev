@@ -9,98 +9,39 @@
 /*This applies to the whole navigation or menu bar*/
 .navbar {
   background: #131313; /*Black will be the colour of the navbar*/
-  height: 80px; /*The height will be 80px, not to tall or short*/
+  height: 100px; /*The height will be 80px, not to tall or short*/
   display: flex; /*This is to have the elements in a row for aesthetic purposes*/
   justify-content: center; /*This is to have the elements justified in the navbar*/
   align-items: center; /*Let's align the items in the center of the navigation bar*/
-  font-size: 1.2rem; /*This is the size of the font on the navbar. It was adjusted by trial and error not to be readable and appealing*/ 
+  font-size: 1.5rem; /*This is the size of the font on the navbar. It was adjusted by trial and error not to be readable and appealing*/ 
   position: sticky; /*This is to have the elements always visible on the top of the pages*/
   top: 0; /*We want the navbar to the top of the page without spaces*/
   z-index: 999; /*z-index 999 says that we want the navbar to be always on to of all the other elements of the page*/
 }
 
-/*This container is for the logo on the navigation bar*/
 #navbar__logo {
-  background-color: #0f0707; /*The colour of the logo background is set to black, the same of the navbar (aesthetic purposes)*/
-  background-size: 100%; /*The size of the background is 100% to cover the whole container*/
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  padding-left: 25px;
+  display: flex; /*This is to have the elements of the logo (image and text) in a row*/
+  align-items: center; /*This is to have the elements of the logo (image and text) in a row*/
+  text-decoration: none; /*I do not want decorations on the logo. If I delete this line, the logo will be underlined*/
 }
 
 /*This block is for image of the Record label logo (png), which is to the left of the navbar*/
 #navbar__logo img {
-  height: 100px;
-  width: 80px;
-  object-fit: contain;
-  margin-right: 20px;
-}
-
-#navbar__logo span {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* replace with your desired font */
-  font-size: 20px; /* replace with your desired font size */
-  color: #ffffff; /* replace with your desired color */
-  margin-left: 20px; /* replace with your desired distance */
-}
-
-.navbar__menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
+  height: 100px; /*The height of the image will be 100px. It was adjust by trial and error to be visible and not too big or small*/
+  width: 80px; /*The width of the image is 80px. By doing this, when using a computer, the text Rêve Discos will be linear with the image*/
+  object-fit: contain; /*This is not to have the image cropped and to keep its round proportions*/
+  margin-right: 20px; /*This 20px give us space between the image and the text Rêve Discos*/
 }
 
 .navbar__item {
-  /* Add left and right margins */
-  margin: 0 20px; /* This adds 10px of space on the left and right */
-}
-
-.navbar__links {
-  height: 80px;
-  width: 80px;
-  object-fit: contain;
+  margin: 0 20px; /* This adds 10px of space on the left and right. Otherwise, the logo and menu are too separated between them*/
 }
 
 #navbar__logo span {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* replace with your desired font */
-  font-size: 1.5rem; /* replace with your desired font size */
-  color: #ffffff; /* replace with your desired color */
-  margin-left: -100px; /* replace with your desired distance */
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Kumbh Sans', sans-serif;
-} 
-
-.navbar {
-  background: #131313;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-#navbar__logo {
-  background-color: #0f0707;
-  background-image: linear-gradient(to top, #ffffff 0%, #2e2623 100%);
-  background-size: 100%;
-  background-clip: text;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  padding-left: 25px;
+  font-size: 1.5rem; /*This is to have the same size of letter between the logo and menu items*/
+  color: #ffffff; /*This to have the letters of the logo white like the menu ones*/
+  margin-left: -100px; /*This is to have the logo and the menu words or items in the same line*/
 }
 
 .navbar__menu {
@@ -124,11 +65,8 @@
 .navbar__container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
-  z-index: 1;
   width: 100%;
-  max-width: 1300px;
-  padding: 0;
+  max-width: 1400px;
 }
 
 .dropdown {
@@ -153,53 +91,6 @@
 
 .dropdown-menu li {
   list-style: none;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu a:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
-
-.navbar__container {
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #131313;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-menu a {
-  color: #fff;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-menu li {
-  list-style: none;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
 }
 
 .dropdown-menu a:hover {
@@ -221,5 +112,5 @@ footer {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
