@@ -1,3 +1,8 @@
+<!--Before starting with the code and comments, it is important to say that the assignment
+asks for 5 webpages as a maximum and this is met. The Policy page might be considered a 6th one,
+but when pressed, it is opened in another window, as the teacher told me not to interfere with the user
+experience-->
+
 <!--We first create an html declaration for the browser to understand that
 we are writting the website in HTML-->
 <!DOCTYPE html>
@@ -23,6 +28,8 @@ only the title to be displayed on the tab-->
                                                                                         I prefered to download the package and store it in
                                                                                         the project folder in case the site is removed from the web.
                                                                                         There is no illegal and it use is allowed according the author-->
+    <!--Before explaining the navbar, it is important to say that this one, as the footer, will be the same on every single webpage,
+    so the comments will be duplicated on all of them-->                                                                                    
     <!--This nav element is created to encompass every single element included in the navbar that,
     links to other pages. This is, every element of the navigation bar-->
     <nav class="navbar">
@@ -76,6 +83,7 @@ only the title to be displayed on the tab-->
 
 <!-- In this page we have 2 content classes or blocks that swap between an image and text and text and music player-->
 <!--The first class "content1" will store an image (image-container1) inside the div element, that is a legitimate picture of the Record Label-->
+<!--I structure the page in this way to give it symmetry and an appealing first impression-->
     <div class="content1">
         <div class="image-container1">
             <img src="/images/Reve cover.jpg" alt="Rêve Discos cover image"/>
@@ -98,6 +106,7 @@ only the title to be displayed on the tab-->
 <!--The second class "content2" stores text first introducing the record label music (text-container2) 
     and then a music player inside the image-container2. The name of the class was not change to keep the configuration
     of the 1st block-->
+<!-- As I said before, now the text is first and then the player, to balance the home page and meke it symmetrical-->
 <div class="content2">
     <div class="text-container2">
         <h1>Our music</h1>
@@ -117,10 +126,17 @@ only the title to be displayed on the tab-->
 <!--There is a left-top button to display the playlist. On the centre, there is a playing_part class with an image to give it some style, 
     and a control_part that is divided into song_title class (songs and artists information), control_buttons (with the volume slider and 
     player buttons -->
+<!--The main intention of this website is to give visibility to the artists and not to sell discs or merchandising
+(that was common during the 90's. Now, the musicians and record labels earn by playing the songs). On the homepage
+There is no direct link to the artist's platforms, but by giving them a first impression, I prompt visitor to go
+to their own webpages, know more about the musicians and provide links to their content (that is the business)-->
+        <!--We start the music player structure-->
         <div class="music_player">
+            <!--the top_bar represents the playlist, which you can access to by pressing the menu-alt-right button-->
             <div class="top_bar">       
                 <button onclick="open_p()"><i class='bx bx-menu-alt-right' ></i></button>
             </div>
+            <!--the playing_part is where a picture is located to decorate the player (a round picture of Chris Anich)-->
             <div class="playing_part">
                 <div class="img_artist">
                     <img src="\images\Chris Anich Web-Music-Player.jpg" alt="Chris Anich Web-Music-Player">
@@ -128,12 +144,15 @@ only the title to be displayed on the tab-->
             </div>
             
             <!--control part-->
+            <!--Here we have the main content of the music player, including the song and artist names and control buttons-->
             <div class="control_part">
                 <div class="song_title">
                     <p>song title</p>
                     <p>artist name</p>
                 </div>
-            
+                <!--The control_buttons class stores every element of the same, including the volume slider. This is very
+                importat, because it gives functionality to the music player when assigning the functions on our Javascript file
+                (which is called just before the end of the body of this html)-->
                 <div class="control_buttons">
                     <div class="volume_slider">
                         <div class="volume_control">
@@ -190,7 +209,9 @@ only the title to be displayed on the tab-->
 <!--This is the footer or the bottom of the page. It is the same in each of the websites. It is very similar to the Menu bar, but it contains different
 elements, like the brand of the Record Label (it is not a link), the links to Rêve Discos social media and the Policy website. All this links are opened in
 different windows not to interfere in the experience of the user while navigating on the website. It is important to hightlight that the classes navbar
-and navbar__container are the same of the menu to use the same CSS file and keep the style of the site-->
+and navbar__container are the same of the menu to use the same CSS file and keep the style of the site.
+If you have a company of any kind, you need to give the user the option of navigating other sources of information,
+especially in the art field, where social media is everything-->
 <footer>    
     <nav class="navbar">
         <div class="navbar__container">

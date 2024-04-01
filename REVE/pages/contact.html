@@ -36,10 +36,17 @@
     <!-- Create a welcome page introducing the Rêve Discos (Independent Chilean Record Label) -->
     <!-- Enter your email -->
 
+    <!--This is the email-form or contact form. This is the only element of this page and it was designed like this
+    to avoid distractions and try to give a clear insight to the user-->
     <div class="email-form">
+        <!--Contact title to explain briefly that this is the way to contact the record label-->
         <div class="contact_title">
             <h1>Contact us</h1>
         </div>
+        <!--Every remainder element of the form is a text or user message box of class input_container, 
+            where the user have to input their information. They are, first name, last name, e-mail address,
+            phone number, and the message. This information will be procces in the contact_form() function
+            of our reve.js (Javascript) file-->
         <div class="input_container">
             <h2>First name:</h2><input type="text" id="firstnamex" value="">
         </div>
@@ -47,14 +54,18 @@
             <h2>Last name:</h2><input type="text" id="lastnamex" value="">
         </div>
         <div class="input_container">
-            <h2>E-mail address:</h2><input type="text" id="emailaddressx" value="">
+            <h2>E-mail:</h2><input type="text" id="emailaddressx" value="">
         </div>
         <div class="input_container">
-            <h2>Phone number:</h2><input type="text" id="phonex" value=""></h2>
+            <h2>Phone:</h2><input type="text" id="phonex" value=""></h2>
         </div>
         <div class="input_container">    
             <h2>Message:</h2><textarea id="usermessagex"></textarea>
         </div>
+        <!--This las element is the Submit button, which will activate the contact_form() function
+        and give live to this part of the webpage. The answer is stored in a variable message, but
+        because we haven implemented a database or email repository yet, it will stay idle and
+        not used for now-->
         <div class="button_container">
             <p id="answerx"></p>
             <button type="button" onclick="contact_form()"><h3>Submit</h3></button>

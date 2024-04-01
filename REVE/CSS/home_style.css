@@ -1,113 +1,135 @@
+/*This block is for the content1, that stores the image-container1 and text-container1.
+I did it in this way to be able to modify the block in general*/
+/*Every line was proven manually until I got the style that according to my taste was the best and more
+symmetric*/
 .content1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 50px 250px auto; /* top margin is 20px, right and left margins are auto, bottom margin is 0 */
+    grid-template-columns: 1fr 1fr; /*I wanted to have 2 columns, one for image and the other one for text*/
+    gap: 10px; /*This is a good space between the image and the text, they do not have to be sticked*/
+    margin: 50px 250px auto; /* top margin is 50px, right margin is 250px and left bottom margin is auto (the browser decides) */
     align-items: start; /* aligns the content to the top of the grid cell */
 }
 
+/*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
+when it is visualised on a mobile device. I we do not add this, the page will be disorganised when it is not
+visit on a computer*/
 @media screen and (max-width: 768px) {
     .content1 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*When the content is displayed on a device of 768 or less px, it is going to be
+                                    shown in only 1 column*/
     }
 }
 
+/*This block is for the content1, that stores the image-container1 and text-container1.
+I did it in this way to be able to modify the block in general*/
+/*Every line was proven manually until I got the style that according to my taste was the best and more
+symmetric*/
 .content2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr 1fr; /*I wanted to have 2 columns, one for text and the other one for image*/
+    gap: 60px; /*This is a good space between the image and the text, they do not have to be sticked*/
     margin: 40px 250px auto; /* top margin is 20px, right and left margins are auto, bottom margin is 0 */
     align-items: start; /* aligns the content to the top of the grid cell */
 }
 
+/*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
+when it is visualised on a mobile device. I we do not add this, the page will be disorganised when it is not
+visit on a computer*/
 @media screen and (max-width: 768px) {
     .content2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*When the content is displayed on a device of 768 or less px, it is going to be
+                                    shown in only 1 column*/
     }
 }
 
 .image-container1 {
-    width: 100%;
+    width: 100%; /*The image-container1 width is going to be the 100% of the content1 block (not to cut it)*/
 }
 
 .text-container1 {
-    width: 100%;
+    width: 100%; /*The text-container1 width is going to be the 100% of the content1 block (not to cut it)*/
     font-size: 25px; /* adjust the value to change the text size */
-    text-align: left; 
+    text-align: left; /*This is to aligned the text to the left like most of latin text*/
 }
 
 .image-container2 {
-    width: 100%;
+    width: 100%; /*The image-container1 width is going to be the 100% of the content1 block (not to cut it)*/
 }
 
 .text-container2 {
-    width: 100%;
+    width: 100%; /*The text-container1 width is going to be the 100% of the content1 block (not to cut it)*/
     font-size: 25px; /* adjust the value to change the text size */
-    text-align: left; 
+    text-align: left; /**/
 }
 
+/*Every img (image) of the related pages using the home_style ccs file will have a 95% of width to fit the parent
+container and be symmetric and stylised according to the website design*/
 img {
-    min-width: 300px; /* adjust this value as needed */
+    min-width: 300px; /*The image cannot have less than 300px, otherwise, they lose proportion and sense*/
     width: 95%;
-    height: auto;
-    border-radius: 18px
+    height: auto; /*This is the image proportion and it is decided by the browser*/
+    border-radius: 18px /*To have a more appealing design, I added this line to make the images border round*/
 }
 
 .video {
-    border-radius: 18px; /* This will make the videos round */
+    border-radius: 18px; /* This will make the videos round, to keep the same stile of images*/
 }
 
 body {
-    background-color: #f0f0f0;
-    margin: 0vh;
-    background-image: url('/images/freepik_background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0vh; /*The body of the page will not have margin and will fit exactly the size of the screen*/
+    background-image: url('/images/freepik_background.jpg'); /*This is the background image of the pages using this css. It is free to use
+                                                             from freepik.com, but the credits must be mentioned*/                    
+    background-repeat: no-repeat; /*This image will only be one, not repeated*/
+    background-size: cover; /*This is to be sure that the background image will fit the screen of any browser*/
     }
 
-.page {
-    padding: 40px;
-}
-
+/*Every h1 header letter of the pages using this CSS file will use the font-family selected. If for any reason
+the device does not have the first font, it will take the second one, and so on. The black colour is to have 
+contrast in relation to the background and be legible*/
 h1 {
-    /* key:value*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
 }
 
+/*Every h3 header letter of the pages using this CSS file will use the font-family selected. If for any reason
+the device does not have the first font, it will take the second one, and so on. The black colour is to have 
+contrast in relation to the background and be legible*/
 h3 {
     /* key:value*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
 }
 
-h3 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-
+/*Every h4 header letter of the pages using this CSS file will use the font-family selected. If for any reason
+the device does not have the first font, it will take the second one, and so on. The black colour is to have 
+contrast in relation to the background and be legible*/
 h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
-    margin-bottom: 20px;
 }
 
-
+/*Every p letter of the pages using this CSS file will use the font-family selected. If for any reason
+the device does not have the first font, it will take the second one, and so on. The purple colour is to decorate 
+according to the colours of the brand and still have contrast in relation to the background image*/
 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(114, 74, 154);
 }
 
+/*This icons-container will define the characteristics of the social media icons used on the footer of every pages.
+They are white from the page*/
 .icons-container {
-    display: flex;
-    justify-content: space-around;
+    display: flex; /*This is to have the icons in a row and not in a column (aesthetic purposes, not functional ones)*/
+    justify-content: space-around; /*This is to have space between the icons and not to have them sticked to each other*/
     padding: 20px 0;
 }
 
 .icons-container .bx {
-    font-size: 50px;
+    font-size: 50px; /*50px were the best size for the icons to be readable and not big or small*/
 }
 
+/*This icons-container will define the characteristics of the social media icons used on the page of the artists
+(they use the home_style.css file as well)*/
 .social__links i {
-    color: #000; 
+    color: #000; /*The black colour of the links is to have contrast among them and the background of the page*/
 }
