@@ -99,7 +99,7 @@ function open_p() {
 //title and artist are string that will appear on the music player when the respective song is playing.
 let songs = [
     {src: "../songs/Chris Anich - Dime si no.mp3", title: "Dime si no", artist: "Chris Anich"},
-    {src: "../songs/Chris Anich - Bienvenidos a la Tierra.mp3", title: "Bienvenidos a la Tierrra", artist: "Chris Anich"},
+    {src: "../songs/Chris Anich - Bienvenidos a la Tierra.mp3", title: "Bienvenidos a la Tierra", artist: "Chris Anich"},
     {src: "../songs/DSYS - Esclava de nadie.mp3", title: "Esclava de nadie", artist: "De Sombras y Siluetas"},
     {src: "../songs/DSYS - Ladrandole a la luna.mp3", title: "Landrándole a la luna", artist: "De Sombras y Siluetas"},
 ];
