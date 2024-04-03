@@ -7,6 +7,7 @@ the border-radius property to 18px, like the rest of the media of the website*/
     background-color: #f2f2f2; /*This is the colour of the email form container. It is light grey to have contrast with the letters of the form*/
     border-radius: 18px;
     box-shadow: 0 0 10px 0 #333; /*This give as an appealing aspect to the container, like having volume thanks to the shadow)*/
+    margin-bottom: 100px;
 }
 
 /*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
