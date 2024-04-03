@@ -18,9 +18,9 @@ only the title to be displayed on the tab-->
     <!--In the beginning of the body we create a link tag to reference the CSS files that will
     define the design the style of every element inside the body. In this particular case,
     one for the menu (that will be used in every page and a particular one for the home page)-->
-    <link rel="stylesheet" type="text/css" href="/CSS/menu_style.css"> <!--Menu CSS, that will be the same in every single webpage-->
-    <link rel="stylesheet" type="text/css" href="/CSS/about_style.css"> <!--About style CSS defines the style of this page-->
-    <link rel="stylesheet" type="text/css" href="/boxicons-2.1.4/css/boxicons.min.css"> <!--This Boxicon CSS is special, 
+    <link rel="stylesheet" type="text/css" href="../CSS/menu_style.css"> <!--Menu CSS, that will be the same in every single webpage-->
+    <link rel="stylesheet" type="text/css" href="../CSS/about_style.css"> <!--About style CSS defines the style of this page-->
+    <link rel="stylesheet" type="text/css" href="../boxicons-2.1.4/css/boxicons.min.css"> <!--This Boxicon CSS is special, 
                                                                                         it does not retrieve the icons from Boxicon webpage,
                                                                                         I prefered to download the package and store it in
                                                                                         the project folder in case the site is removed from the web.
@@ -38,11 +38,11 @@ only the title to be displayed on the tab-->
             <!--Inside this division, we have an 'a' tag that uses the 'href' attribute to contain
             the link, in this case, the home page. In this way, we can go back to the main page from
             any other page of the website-->
-            <a href="/pages/home.html" id="navbar__logo">
+            <a href="home.html" id="navbar__logo">
                 <!--The home page is reached by pressing the logo and 'Rêve Discos' word.
                 This is the reason why there is an image hosted insde the navbar__container
                 and the name of the company beside it-->
-                <img src="\images\Logo REVEDISCOS.png" alt="RÊVE Logo">
+                <img src="../images/Logo REVEDISCOS.png" alt="RÊVE Logo">
                 <span>Rêve Discos</span>
             </a>
             <!--Inside the div element there is an 'ul' element (list of items) with the class name
@@ -112,7 +112,7 @@ to the left and the description to de right-->
     <div class="team">
         <div class="content1">
             <div class="image-container1">
-                <img src="/images/Chris Anich - Director.jpg" alt="Chris Anich - Director"/>
+                <img src="../images/Chris Anich - Director.jpg" alt="Chris Anich - Director"/>
             </div>
             <div class="text-container1">
                 <h1>Chris Anich</h1>
@@ -125,7 +125,7 @@ to the left and the description to de right-->
 
         <div class="content2">
             <div class="image-container2">
-                <img src="/images/Sebastian Roque.jpg" alt="Chris Anich - Director"/>
+                <img src="../images/Sebastian Roque.jpg" alt="Chris Anich - Director"/>
             </div>
             <div class="text-container1">
                 <h1>Sebastián Roque</h1>
@@ -138,7 +138,7 @@ to the left and the description to de right-->
 
         <div class="content3">
             <div class="image-container3">
-                <img src="/images/Daniel Soto.jpg" alt="Daniel Soto - Marketing and Sales"/>
+                <img src="../images/Daniel Soto.jpg" alt="Daniel Soto - Marketing and Sales"/>
             </div>
             <div class="text-container1">
                 <h1>Daniel Soto</h1>
@@ -182,6 +182,6 @@ especially in the art field, where social media is everything-->
 
 <!--It is recommended to put the line with the Javascript file before the end of the body of the webpage according to several visited websites.
 In this way we are sure that it will work without problems-->
-<script src="/reve.js"></script>
+<script src="../reve.js"></script>
 </body>
 </html> <!--Here we finally close the body and html tags-->

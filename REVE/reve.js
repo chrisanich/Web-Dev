@@ -98,10 +98,10 @@ function open_p() {
 //We need to add the source (src), that is the location of each song inside the songs folder of the project, the title and the artist.
 //title and artist are string that will appear on the music player when the respective song is playing.
 let songs = [
-    {src: "/songs/Chris Anich - Dime si no.mp3", title: "Dime si no", artist: "Chris Anich"},
-    {src: "/songs/Chris Anich - Bienvenidos a la Tierra.mp3", title: "Bienvenidos a la Tierrra", artist: "Chris Anich"},
-    {src: "/songs/DSYS - Esclava de nadie.mp3", title: "Esclava de nadie", artist: "De Sombras y Siluetas"},
-    {src: "/songs/DSYS - Ladrandole a la luna.mp3", title: "Landrándole a la luna", artist: "De Sombras y Siluetas"},
+    {src: "/REVE/songs/Chris Anich - Dime si no.mp3", title: "Dime si no", artist: "Chris Anich"},
+    {src: "/REVE/songs/Chris Anich - Bienvenidos a la Tierra.mp3", title: "Bienvenidos a la Tierrra", artist: "Chris Anich"},
+    {src: "/REVE/songs/DSYS - Esclava de nadie.mp3", title: "Esclava de nadie", artist: "De Sombras y Siluetas"},
+    {src: "/REVE/songs/DSYS - Ladrandole a la luna.mp3", title: "Landrándole a la luna", artist: "De Sombras y Siluetas"},
 ];
 
 let currentSong = 0; //we create a current song variable and set it to 0, that is the index of 1st element of the songs array (the 1st song to play).

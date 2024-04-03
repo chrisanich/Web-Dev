@@ -36,10 +36,10 @@ only the title to be displayed on the tab-->
     <!--In the beginning of the body we create a link tag to reference the CSS files that will
     define the design the style of every element inside the body. In this particular case,
     one for the menu (that will be used in every page and a particular one for the home page)-->
-    <link rel="stylesheet" type="text/css" href="/CSS/menu_style.css"> <!--Menu CSS, that will be the same in every single webpage-->
-    <link rel="stylesheet" type="text/css" href="/CSS/home_style.css"> <!--Home CSS defines the style of the homepage-->
-    <link rel="stylesheet" type="text/css" href="/CSS/music_player.css"> <!--Music player CSS defines the style of the Music player-->
-    <link rel="stylesheet" type="text/css" href="/boxicons-2.1.4/css/boxicons.min.css"> <!--This Boxicon CSS is special, 
+    <link rel="stylesheet" type="text/css" href="../CSS/menu_style.css"> <!--Menu CSS, that will be the same in every single webpage-->
+    <link rel="stylesheet" type="text/css" href="../CSS/home_style.css"> <!--Home CSS defines the style of the homepage-->
+    <link rel="stylesheet" type="text/css" href="../CSS/music_player.css"> <!--Music player CSS defines the style of the Music player-->
+    <link rel="stylesheet" type="text/css" href="../boxicons-2.1.4/css/boxicons.min.css"> <!--This Boxicon CSS is special, 
                                                                                         it does not retrieve the icons from Boxicon webpage,
                                                                                         I prefered to download the package and store it in
                                                                                         the project folder in case the site is removed from the web.
@@ -57,11 +57,11 @@ only the title to be displayed on the tab-->
             <!--Inside this division, we have an 'a' tag that uses the 'href' attribute to contain
             the link, in this case, the home page. In this way, we can go back to the main page from
             any other page of the website-->
-            <a href="/pages/home.html" id="navbar__logo">
+            <a href="home.html" id="navbar__logo">
                 <!--The home page is reached by pressing the logo and 'Rêve Discos' word.
                 This is the reason why there is an image hosted insde the navbar__container
                 and the name of the company beside it-->
-                <img src="\images\Logo REVEDISCOS.png" alt="RÊVE Logo">
+                <img src="../images/Logo REVEDISCOS.png" alt="RÊVE Logo">
                 <span>Rêve Discos</span>
             </a>
             <!--Inside the div element there is an 'ul' element (list of items) with the class name
@@ -102,7 +102,7 @@ only the title to be displayed on the tab-->
 <!--I structure the page in this way to give it symmetry and an appealing first impression-->
     <div class="content1">
         <div class="image-container1">
-            <img src="/images/Reve cover.jpg" alt="Rêve Discos cover image"/>
+            <img src="../images/Reve cover.jpg" alt="Rêve Discos cover image"/>
         </div>
 <!--The second class "text-container1" will store the text that will be displayed in the home page, introducing Rêve Discos-->
         <div class="text-container1">
@@ -155,7 +155,7 @@ to their own webpages, know more about the musicians and provide links to their 
             <!--the playing_part is where a picture is located to decorate the player (a round picture of Chris Anich)-->
             <div class="playing_part">
                 <div class="img_artist">
-                    <img src="\images\Chris Anich Web-Music-Player.jpg" alt="Chris Anich Web-Music-Player">
+                    <img src="../images/Chris Anich Web-Music-Player.jpg" alt="Chris Anich Web-Music-Player">
                 </div>
             </div>
             
@@ -251,6 +251,6 @@ especially in the art field, where social media is everything-->
 
 <!--It is recommended to put the line with the Javascript file before the end of the body of the webpage according to several visited websites.
 In this way we are sure that it will work without problems-->
-<script src="/reve.js"></script>
+<script src="../reve.js"></script>
 </body>
 </html> <!--Here we finally close the body and html tags-->
