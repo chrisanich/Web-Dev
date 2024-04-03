@@ -106,6 +106,7 @@ footer {
   padding: 3px;
   color: white; /*This line colours the letters of the footer white (© Rêve Discos 2024)*/
   margin-top: 20px; /*With this we give a space between the last element of the page and the footer, that is 20 px*/
+  
 }
 
 .copyright {
@@ -113,4 +114,19 @@ footer {
   text-decoration: none; /*This line is to avoid underlines on the footer words (© Rêve Discos 2024)*/
   font-size: 1.5rem; /*This is the size of the letters of the footer (© Rêve Discos 2024). It is the same for the other elements of the
   footer and navbar (menu)*/
+}
+
+/*This is the block for the rights to the Freepic website. It is a link that open Freepic website in another tab*/
+#freepic_url {
+  color: #fff; /*This is the color of the font. White like the rest of the letters.*/
+  font-size: 13px; /*This is the size of the font to the link of Freepik. The rights are in order as they ask but the
+                   the size is smaller because it is not the purpose of the website to promote this company*/
+  text-decoration: none; /*With this I remove the underline of the Frepic link*/
+}
+
+#boxicons_url {
+  color: #fff; /*This is the color of the font. White like the rest of the letters.*/
+  font-size: 13px; /*This is the size of the font to the link of Freepik. The rights are in order as they ask but the
+                   the size is smaller because it is not the purpose of the website to promote this company*/
+  text-decoration: none; /*With this I remove the underline of the Boxicons link*/
 }

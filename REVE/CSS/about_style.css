@@ -1,167 +1,123 @@
+/*This block of code involves both the about and team blocks. It helps to keep coherence between both of them*/ 
 .about, .team {
-    display: grid;
+    display: grid; /*This establish that the elements of both classes (about and team) will be displayed as a grid container*/
     gap: 10px;
     margin: 40px 400px auto; /* top margin is 20px, right and left margins are auto, bottom margin is 0 */
     justify-content: center; /* centers content horizontally */
     align-items: center; /* centers content vertically */
-    font-size: 25px;
+    font-size: 25px; /*This font size applies to all the text of the about and team classes. This keeps the proportion with the rest of the website*/
   }
 
+/*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
+when it is visualised on a mobile device. I we do not add this, the page will be disorganised when it is not
+visit on a computer*/
 @media screen and (max-width: 768px) {
     .about {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*When the content is displayed on a device of 768 or less px, it is going to be
+                                    shown in only 1 column*/
     }
 }
 
+/*This block defines the characteristics of the images of the about page, especifically the pictures of the team members*/
 img {
     min-width: 300px;
     width: 95%;
     height: auto;
-    border-radius: 18px;
+    border-radius: 18px; /*This is to keep the same round border of the images of the whole website*/
 }
 
-body {
-    background-color: #f0f0f0;
-    margin: 0vh;    
-    background-image: url('/images/freepik_background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+body { 
+    background-image: url('/images/freepik_background.jpg'); /*This is the background image of the pages using this css. It is free to use
+                                                             from freepik.com, but the credits must be mentioned*/                    
+    background-repeat: no-repeat; /*This image will only be one, not repeated*/
+    background-size: cover; /*This is to be sure that the background image will fit the screen of any browser*/
 }
 
-.page {
-    padding: 40px;
-}
-
+/*Every h1 header letter of the pages using this CSS file will use the font-family selected. If for any reason
+the device does not have the first font, it will take the second one, and so on. The black colour is to have 
+contrast in relation to the background and be legible*/
 h1 {
-    /* key:value*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
 }
 
+/*Every h3 header letter of the pages using this CSS file will use the font-family selected. If for any reason
+the device does not have the first font, it will take the second one, and so on. The black colour is to have 
+contrast in relation to the background and be legible*/
 h3 {
     /* key:value*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
 }
 
-h3 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-
+/*Every h4 header letter of the pages using this CSS file will use the font-family selected. If for any reason
+the device does not have the first font, it will take the second one, and so on. The black colour is to have 
+contrast in relation to the background and be legible*/
 h4 {
-    /* key:value*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     margin-bottom: 20px; /*Margin after Record Label to give it a more appealing aspect to the text*/
 }
 
+/*Every p letter of the pages using this CSS file will use the font-family selected. If for any reason
+the device does not have the first font, it will take the second one, and so on. The purple colour is to decorate 
+according to the colours of the brand and still have contrast in relation to the background image*/
 p {
-    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(114, 74, 154);
-    font-size: 25px;
 }
 
-/*****************************************************************/
-
+/*********************************************************************************************************/
+/*Every of the classes "content1", "content2" and "content3" have the same characteristics (one for each member of the team)
+, as an image-container1, and a text-container1as well*/
 .content1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    display: grid; /*This for both, the image and text containers to be displayed on a grid*/
+    grid-template-columns: 1fr 1fr; /*With this, we have 2 columns for every one of content classes (team members)*/
+    gap: 60px; /*I set a gap og 60 px between the image and text of each team member for them not to be sticked (that doesn't look good)*/
     align-items: start; /* aligns the content to the top of the grid cell */
 }
 
+/*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
+when it is visualised on a mobile device. I we do not add this, the page will be disorganised when it is not
+visit on a computer*/
 @media screen and (max-width: 768px) {
     .content1 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*When the content is displayed on a device of 768 or less px, it is going to be
+                                    shown in only 1 column*/
     }
 }
 
 .content2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    display: grid; /*This for both, the image and text containers to be displayed on a grid*/
+    grid-template-columns: 1fr 1fr; /*With this, we have 2 columns for every one of content classes (team members)*/
+    gap: 60px; /*I set a gap og 60 px between the image and text of each team member for them not to be sticked (that doesn't look good)*/
     align-items: start; /* aligns the content to the top of the grid cell */
 }
 
+/*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
+when it is visualised on a mobile device. I we do not add this, the page will be disorganised when it is not
+visit on a computer*/
 @media screen and (max-width: 768px) {
     .content2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*When the content is displayed on a device of 768 or less px, it is going to be
+                                    shown in only 1 column*/
     }
 }
 
 .content3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    display: grid; /*This for both, the image and text containers to be displayed on a grid*/
+    grid-template-columns: 1fr 1fr; /*With this, we have 2 columns for every one of content classes (team members)*/
+    gap: 60px; /*I set a gap og 60 px between the image and text of each team member for them not to be sticked (that doesn't look good)*/
     align-items: start; /* aligns the content to the top of the grid cell */
 }
 
+/*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
+when it is visualised on a mobile device. I we do not add this, the page will be disorganised when it is not
+visit on a computer*/
 @media screen and (max-width: 768px) {
     .content2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*When the content is displayed on a device of 768 or less px, it is going to be
+                                    shown in only 1 column*/
     }
-}
-
-.image-container1 {
-    width: 100%;
-}
-
-.text-container1 {
-    width: 100%;
-    font-size: 25px; /* adjust the value to change the text size */
-    text-align: left; 
-}
-
-.image-container2 {
-    width: 100%;
-}
-
-.text-container2 {
-    width: 100%;
-    font-size: 25px; /* adjust the value to change the text size */
-    text-align: left; 
-}
-
-img {
-    min-width: 300px; /* adjust this value as needed */
-    width: 95%;
-    height: auto;
-}
-
-
-
-body {
-    background-color: #f0f0f0;
-    margin: 0vh;    
-}
-
-.page {
-    padding: 40px;
-}
-
-h1 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-
-h3 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-
-h3 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-
-h4 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    margin-bottom: 20px; /*Margin after Record Label to give it a more appealing aspect to the text*/
 }

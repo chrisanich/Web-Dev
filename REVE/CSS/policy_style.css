@@ -1,67 +1,47 @@
-.policy, .about {
-    display: grid;
-    gap: 10px;
-    margin: 40px 400px auto; /* top margin is 20px, right and left margins are auto, bottom margin is 0 */
-    justify-content: center; /* centers content horizontally */
-    align-items: center; /* centers content vertically */
-    font-size: 25px;
+/*First, we start working on the policy container*/
+.policy {
+    display: grid; /*This will specified that the elements of this policy class will be displayed as a grid container*/
+    gap: 10px; /*This is to have the text content in the middle of the page, otherwise it will wide to the borders of the page, what is not nice*/
+    margin: 40px 400px auto; /*top margin in 40px, right margin is 400px and left is auto, decided by the browser*/
+    font-size: 25px; /*This font size applies to all the text in the policy container. This to keep proportion with the rest of the website*/
   }
 
+/*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
+when it is visualised on a mobile device. I we do not add this, the page will be disorganised when it is not
+visit on a computer*/
 @media screen and (max-width: 768px) {
     .policy {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*When the content is displayed on a device of 768 or less px, it is going to be
+                                    shown in only 1 column*/
     }
 }
 
-img {
-    min-width: 300px;
-    width: 95%;
-    height: auto;
-}
-
 body {
-    background-color: #f0f0f0;
-    margin: 0vh;    
+    margin: 0vh; /*The body of the page will not have margin and will fit exactly the size of the screen*/
+    background-image: url('/images/freepik_background.jpg'); /*This is the background image of the pages using this css. It is free to use
+                                                             from freepik.com, but the credits must be mentioned*/                    
+    background-repeat: no-repeat; /*This image will only be one, not repeated*/
+    background-size: cover; /*This is to be sure that the background image will fit the screen of any browser*/
 }
 
-.page {
-    padding: 40px;
+/*This is for the image of the navbar. We are not using the same CSS, so, we have to specify the image size*/
+img {
+    min-width: 300px; /*This is the minimum width of the image for it not to lose proportion*/ 
 }
 
+/*This block defines the font-family and colour of the h1 header of the policy container*/
 h1 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*The same font-family of the whole website*/
+    color: black; /*The colour of the h1 is defined as black to have contrast with the background image*/
 }
 
+/*This block defines the font-family and colour of the h3 header of the policy container*/
 h3 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*The same font-family of the whole website*/
+    color: black; /*The colour of the h1 is defined as black to have contrast with the background image*/
 }
 
-h3 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-
-h4 {
-    /* key:value*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    margin-bottom: 20px; /*Margin after Record Label to give it a more appealing aspect to the text*/
-}
-
+/*This block defines the font-family and colour of the paragraph letters of the policy container*/
 p {
-    
-    color: rgb(114, 74, 154);
-}
-
-.copyright {
-    color: rgb(227, 227, 227);
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 1.5rem;
+    color: rgb(114, 74, 154); /*This purple colour is to keep the aesthetic of the website. I still keeps contrast with the background image*/
 }
