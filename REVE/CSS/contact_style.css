@@ -1,99 +1,80 @@
+/*This container is for the email_form container. It has a shape with grey background and rounded corners by setting
+the border-radius property to 18px, like the rest of the media of the website*/
 .email-form {
     margin: 50px auto;
-    width: 30%;
-    padding: 1em;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 #333;
+    width: 30%; /*The width of the email form is 30% of the screen*/
+    padding: 1em; /*This is the 1em padding of the email form*/
+    background-color: #f2f2f2; /*This is the colour of the email form container. It is light grey to have contrast with the letters of the form*/
+    border-radius: 18px;
+    box-shadow: 0 0 10px 0 #333; /*This give as an appealing aspect to the container, like having volume thanks to the shadow)*/
 }
 
+/*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
+when it is visualised on a mobile device. I we do not add this, the page will be disorganised when it is not
+visit on a computer*/
 @media screen and (max-width: 768px) {
     .email-form {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*When the content is displayed on a device of 768 or less px, it is going to be
+                                    shown in only 1 column*/
     }
 }
 
+/*This is the block of code for the contact or email form (Contact us) title. Is is going to be aligned to the left and having a margin 
+of 20px at the bottom*/
 .contact_title {
     text-align: left;
     margin-bottom: 20px;
 }
 
+/*The input container is the white space where the user is going to write the input*/
 .input_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: flex; /*This displays the input as a flex container in respect to the email form container*/
+    justify-content: space-between; /*This is to justify the content writen in the input container to use the whole space*/
+    align-items: flex-start; /*This is to start the content written to the top of the input container*/
 }
 
 .input_container input,
-.input_container textarea {
+.input_container textarea { /*This is to set width to 60% of the input container*/
     width: 60%;
 }
 
-.input_container textarea {
+.input_container textarea { /*This line allows me to set the height of the text area not as a percentage, but as a fixed value*/
     height: 100px;
+    resize: none; /*This line allows to avoid the user to change the form and size of the text area*/
 }
 
-.email-form .button_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+.email-form .button_container { /*This is the container for the submit button of the email form*/
+    display: flex; /*This displays the containers button as a flex container in respect to the email form container*/
+    justify-content: space-between; /*This justifies the button container to use the whole space*/
+    margin-top: 20px; /*I designated a margin of 20px at the top of the button container*/
 }
 
-.email-form .button_container p {
-    flex: 1;
-    text-align:left;
-}
-
+/*This is the style of the button on it self*/
 .email-form .button_container button {
-    flex: none;
-    width: 100px;
-    height: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
+    width: 100px; /*This width for the button of 100px fits well with the rest of the form*/
+    height: 50px; /*This is the height of the button. I looks balance and according to me, cool*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*The font-family for every letter on the website*/
+    font-size: large; /*This is for the browser to set the font size to large and fits the button*/
 }
-
-.policy {
-    display: grid;
-    gap: 10px;
-    margin: 50px 650px auto;
-    justify-content: center;
-    align-items: center;
-}
-
+/*This code is to make the web content adjustible to screens that are 768 pixels or less, for example,
+when it is visualised on a mobile device. I we do not add this, the page will be disorganised when it is not
+visit on a computer*/
 @media screen and (max-width: 768px) {
     .policy {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*When the content is displayed on a device of 768 or less px, it is going to be
+                                    shown in only 1 column*/
     }
 }
 
+/*This is an apart website opened on another tab. The image of thhe menu navbar is defined here*/
 img {
-    min-width: 300px;
-    width: 95%;
-    height: auto;
+    min-width: 300px; /*This is the minimum width allowed for the image on the nav bar. If this is taken out, the
+                        image logo will lose proportion and move to the left of the screen beside the text*/
 }
 
-body {
-    background-color: #f0f0f0;
-    margin: 0;
-    background-image: url('/images/freepik_background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.page {
-    padding: 40px;
-}
-
-h1, h3, h4 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-
-h4 {
-    margin-bottom: 20px;
-}
-
-p {
-    color: rgb(114, 74, 154);
+body { 
+    background-image: url('/images/freepik_background.jpg'); /*This is the background image of the pages using this css. It is free to use
+                                                             from freepik.com, but the credits must be mentioned*/                    
+    background-repeat: no-repeat; /*This image will only be one, not repeated*/
+    background-size: cover; /*This is to be sure that the background image will fit the screen of any browser*/
 }

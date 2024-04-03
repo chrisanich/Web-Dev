@@ -1,133 +1,105 @@
+/*This is for the main container of the music player on the home page*/
 .music_player {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #fff !important;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: relative;
-    width: 100%;
-    height: 550px;
-    border-radius: 18px;
-    background: #566573;
-    overflow: hidden;
+    margin: 0; /*This resets the margin to O or default*/
+    padding: 0; /*This resets the padding to O or default*/
+    box-sizing: border-box; /*The padding and border are including on the total width and height of the element*/
+    color: #fff !important; /*This sets the colour of the letters of the player to white and uses important to override other styles that may be working against it*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*This sets the same font-family of the whole website to the player*/
+    position: relative; /*This is to set the player to be relative to the parent element (the image-container2)*/
+    width: 100%; /*This is to set the width of the player to 100% of the parent element (image-container2)*/
+    height: 550px; /*This is the hight of the player in pixels. I set it to 550px (its default value) because otherwise, its elements lose proportion related to their location*/
+    border-radius: 18px; /*With this line I give the music player the same round corners of all the images and videos of the website*/
+    background: #566573; /*This is the background of the player. I set it to grey because it keeps the aesthetic of the website*/
+    overflow: hidden; /*This is useful to hide the elements that are too big for the player*/
 }
 
-.music_player .top_bar .options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-70px);
-    transition: 0.5s;
-}
-
-.music_player .top_bar .active2 {
-    transform: translateY(0px);
-}
-
-.music_player .top_bar .options button {
-    margin: 0 10px;
-    height: 40px;
-    width: 40px;
-    font-size: 18px;
-}
-
-.music_player .top_bar {
-    width: 100%;
+.music_player .top_bar { /*This is the style of the top bar of the player. It includes only the to open and close the playlist.
+                            It is a container that contains a button to display the playlist
+                            It is set to the left for aesthetic porpuses*/
     padding: 10px 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.music_player .top_bar button {
+.music_player .top_bar button { /*This is the style of the button that open and closes the playlist. It is a circle with a right alt button).
+                                The image of it is in the center of the button, it has a pointer as a cursor, without borders.*/
     z-index: 20;
     height: 45px;
     width: 45px;
     border-radius: 50%;
     font-size: 25px;
     border: none;
-    outline: none;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.08);
-    box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
 .music_player .top_bar button:hover, .music_player .control_part .control_buttons .music_player_btns button:hover {
+    /*This is the style of the when the mouse is over the button, It changes the background colour from grey to a slight red with a shadow (it looks great)*/
     background: linear-gradient(to right, #FF5722, #FF7043);
     box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2) inset,
                 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2)
 }
 
-.music_player .playing_part {
+.music_player .playing_part { /*This block defines the style of the whole centre part of the player. It includes the image, the text of information of the song and artist.
+                              All the elements are included in the same container and are displayed in a column*/
     margin-top: 20px;
-    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.music_player .playing_part .img_artist {
+.music_player .playing_part .img_artist { /*This block defines the style of the image of the artist. It is a circle defined by the
+                                            border-radius 50% and the size is 180px x 180px*/
     height: 180px;
     width: 180px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0.1px 4px 8px 2px rgba(0, 0, 0, 0.1);
 }
 
-.music_player .playing_part .img_artist img_artist{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-}
-
-/*control_part*/
-
-.music_player .control_part {
+/*Control part of the music player*/
+.music_player .control_part { /*This block defines the style of all elements of the control part, including the song and artist names, the control buttons
+                                and the volume sliders*/
     margin-top: 30px;
     width: 100%;
-    display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
-.music_player .control_part .song_title {
+.music_player .control_part .song_title { /*This defines the style of the song and artist names. They are displayed in a column with the size of the font of the artist smaller than
+                                            the font of the song*/
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.music_player .control_part .song_title p {
+.music_player .control_part .song_title p { /*This defines the size of the song title to 14px*/
     font-size: 14px;
 }
 
-.music_player .control_part .song_title p:first-child {
-    font-size: 22px;
-    text-transform: capitalize;
+.music_player .control_part .song_title p:first-child { /*This defines the whole size of the music information on the control part to 25px*/
+    font-size: 25px;
 }
 
-.music_player .control_part .control_buttons {
+.music_player .control_part .control_buttons { /*This is for the style of the buttons of the control part. They are displayed with a margin of 50px and in a column
+                                                the width is 100% to fit the container where they are located*/
     margin-top: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     width: 100%;
 }
 
-.music_player .control_part .control_buttons .music_player_btns {
+.music_player .control_part .control_buttons .music_player_btns { /*This block of code is to stylise the buttons of the control part. They are displayed in the centre of the container
+                                                                    with a margin of 30px. If I delete this block, all the buttons will move to the left*/
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-top: 30px;
 }
 
-.music_player .control_part .control_buttons .music_player_btns button {
+.music_player .control_part .control_buttons .music_player_btns button { /*This block keeps the proportion of the buttons of the control part. They are circles with a size of 55px x 55px.
+                                                                        They have a border radius of 50% to make them circles and a font size (the simbol indide them) of 30px*/
     height: 55px;
     width: 55px;
     border-radius: 50%;
@@ -143,14 +115,15 @@
     box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2); /**/
 }
 
-.music_player .control_part .control_buttons .music_player_btns #play_btn {
+.music_player .control_part .control_buttons .music_player_btns #play_btn { /*This block is to stylise the play button of the control part to be slight red.
+                                                                            It also has a shadow when the mouse is over it. Moreover, it gives a gradient to the button when the mouse is over it*/
     background: linear-gradient(to right, #FF5722, #FF7043);
     box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2) inset,
                 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
 /*playlist songs*/
-.playlist {
+.playlist { /*This block is to define the playlist that is displayed when the alt-right button is clicked. It displays the songs contained in the playlist in a column*/
     position: absolute;
     bottom: 0;
     z-index: 10;
@@ -165,12 +138,13 @@
     flex-direction: column;
 }
 
-.music_player .active {
+.music_player .active { /*This block allows the playlist to be displayed when the alt-right button is pressed. If I delete this block, the playlist is not displayed*/
     max-height: 100vh;
     padding: 100px;
 }
 
-.playlist .p_song {
+.playlist .p_song { /*This block defines the style of the playlist when displayed. It is a container that contains the songs. If I delete this block,
+                    all the elements inside it will be displayed in a messy way*/
     position: relative;
     width: 120%;
     display: flex;
@@ -183,18 +157,21 @@
     box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.1);
 }
 
-.playlist .p_song:not(:first-child) {
+.playlist .p_song:not(:first-child) { /*This block gives a margin-top of 20px between each song block of the playlist. If I delete this block all the songs will be displayed
+                                        together without margin between them*/
     margin-top: 20px;
 }
 
-.playlist .p_song #p_artist {
+.playlist .p_song #p_artist { /*This block defines the style of the block that contains the artist and song names on every block of the playlist.
+                                It keeps the the font size of the artist to 14px and the song to 18px. It gives a margin of 15px to the left of the block
+                                as well. If I delete this, the organisation of the text will be messy*/
     position: absolute;
     bottom: 6px;
     left: 15px;
     font-size: 11px;
 }
 
-.playlist .p_song button {
+.playlist .p_song button { /*This block defines the style of the button that is displayed on every block of the playlist. It is a circle  with a size of 35px x 35px*/
     height: 35px;
     width: 35px;
     border-radius: 50%;
@@ -210,82 +187,51 @@
     box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
-.playlist .p_song:hover {
+.playlist .p_song:hover { /*The block turns darker when the mouse is over the rectangle
+                            that contains the song and artist names.*/
     background: #1C2833;
 
 }
 
-.playlist .p_song:hover button {
+.playlist .p_song:hover button { /*This block give the button a gradient when the mouse is over it. It turns the button from grey to a slight red*/
     background: #FF5722;
 }
 
-.music_player .active_song {
-    background: #1C2833;
-    box-shadow: none;
-}
-
-.playlist .active_song button {
-    background: linear-gradient(to right, #FF5722, #FF7043);
-    box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2) inset,
-                0.1px 8px 8px 2px rgba(0, 0, 0, 0.2);
-}
-
-.volume_control {
+.volume_control { /*This block defines the style of the volume control. The container that stores it is displayed in a column and the proper slider is displayed
+                    in a row*/
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    flex-direction: column-reverse; /*This line displays the volume control name below the slider*/
+    align-items: center; /*This line aligns the word "volume" to the centre of the container below the slider*/
 }
 
 /*volume slider part*/
-.volume_slider {
-    width: 100%;
-    position: relative;
+.volume_slider { /*This puts the volume slider in the centre of the music player*/
+    width: 100%; /*With this, the slider is displayed by using 100% of the container*/
     display: flex;
-    align-items: center;
     justify-content:center;
 }
 
-.volume_slider p {
-    font-size: 13px;
+.volume_slider p { /*This is the font size of the word "Volume" of the volume slider (15px)*/
+    font-size: 15px;
 }
 
-.music_player .control_part #slider {
-    appearance: none;
-    outline: none;
-    width: 85%;
-    height: 4px;
-    cursor: pointer;
-    position: relative;
-    border-radius: 3px;
-}
-
-input[type=range]::-webkit-slider-thumb {
-    appearance: none;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10;
-    background: linear-gradient(to right, #FF5722, #FF7043);
-    box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2) inset,
-                0.1px 8px 8px 2px rgba(0, 0, 0, 0.2);
-}
-
-.music_player .top_bar button,
+.music_player .top_bar button, /*This block gives the symbols inside the control buttons of the music player a white colour*/
 .music_player .control_part .control_buttons .music_player_btns button,
 .playlist .p_song button {
     color: #fff; }
 
-.music_player .control_part .song_title p {
-    color: #fff;
-     
+.music_player .control_part .song_title p { /*This block gives the Song and artists songs on the control buttons of the music player a white colour.
+                                            The purpose of this is to have contrast*/
+color: #fff;                                            
 }
 
-.playlist .p_song p {
+.playlist .p_song p { /*This block gives the Song and artists songs on the playlist blocks (when displayed by pressing the alt-right-button of the music player a white colour
+                        The purpose of this is to have contrast*/
     color: #fff;
     /* Other styles... */
 }
 
-.control_buttons .volume_slider p {
+.control_buttons .volume_slider p { /*This block gives the word "volume" and percentage of volume on the control buttons of the music player a white colour
+                                    The purpose of this is to have contrast*/
     color: #fff;
 }
