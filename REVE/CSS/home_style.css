@@ -77,7 +77,7 @@ img {
 
 body {
     margin: 0vh; /*The body of the page will not have margin and will fit exactly the size of the screen*/
-    background-image: url('/images/freepik_background.jpg'); /*This is the background image of the pages using this css. It is free to use
+    background-image: url('../images/freepik_background.jpg'); /*This is the background image of the pages using this css. It is free to use
                                                              from freepik.com, but the credits must be mentioned*/                    
     background-repeat: no-repeat; /*This image will only be one, not repeated*/
     background-size: cover; /*This is to be sure that the background image will fit the screen of any browser*/
